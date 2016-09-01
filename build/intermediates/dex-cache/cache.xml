@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="401dce8c4065c705f15823d664698127876cf5e7">
+        <dex dex="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5a7829fedc1b5f752109aaabbcdd825a9bb5fc2d\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <!-- Bottom Button -->
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.04"
+            android:background="@color/accentGreen"
+            android:elevation="10dp"
+            android:weightSum="1"
+
+            >
+
+            <TextView
+                android:id="@+id/confirm_course"
+                android:onClick="gotoActivity"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Confirm"
+                android:gravity="center"
+                android:textColor="@color/grey_100"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_weight="1.76"
+                android:background="@drawable/ripple_bordered_green"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--  -->
+</LinearLayout>

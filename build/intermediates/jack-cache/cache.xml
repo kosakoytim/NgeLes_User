@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\jars\classes.jar"
+        revision="24.0.0"
+        sha1="820605b42a2d3d9cb9e6c4cc7453fb4f802aedff">
+        <dex dex="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\jill\debug\packaged\classes-648a5cf7373e331f2b1a3d7cc757e79ddcd11d6f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.makeramen\roundedimageview\2.2.1\jars\classes.jar"
+        revision="24.0.0"
+        sha1="814fc0c3ec69a944add398217d90077301501a74">
+        <dex dex="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\jill\debug\packaged\classes-34b041b8f1f1e5767ff4817a8793062e0351c1f7.jar" />
+    </item>
+
+</items>

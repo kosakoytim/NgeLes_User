@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/id_color2"
+    android:fitsSystemWindows="true">
+
+    <!--<include-->
+        <!--android:id="@+id/toolbar"-->
+        <!--layout="@layout/toolbar" />-->
+
+    <!-- Bottom Button -->
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:weightSum="1"
+        android:layout_marginTop="45dp">
+
+
+        <!--  -->
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.04"
+            android:background="@color/accentGreen"
+            android:elevation="10dp"
+            android:weightSum="1"
+
+            >
+
+            <TextView
+                android:id="@+id/next_to_payment_method"
+                android:onClick="validate_book_course"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Next"
+                android:gravity="center"
+                android:textColor="@color/grey_100"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_weight="1.84"
+                android:background="@drawable/ripple_bordered_green"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/assignment"
+                android:tint="@color/colorAccent"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Booking"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/grey_25"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Masukan data pribadi peserta untuk proses selanjutnya"
+            android:id="@+id/textView"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:textColor="@color/transparentAccent"
+            android:layout_marginBottom="15dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layoutname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="Nama Peserta"
+                android:id="@+id/bc_name"
+                android:textColor="@color/grey_25"
+                android:textSize="30sp"
+                android:textColorHint="@color/grey_25"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layoutphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/bc_phone"
+                android:hint="Nomor Telepon"
+                android:textSize="30sp"
+                android:textColor="@color/grey_25"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layoutemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/bc_email"
+            android:hint="Email"
+            android:textSize="30sp"
+            android:textColor="@color/grey_25"
+            android:layout_gravity="center_horizontal"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

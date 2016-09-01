@@ -1,0 +1,546 @@
+[
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_all_feature.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\home_all_feature.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\payment_method.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\payment_method.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_assignment_detail.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\item_assignment_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_program_profile_testimonial.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_program_profile_testimonial.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_program_profile_location.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_program_profile_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_assignment_comments.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_assignment_comments.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\history_class.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\history_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_home_recommended.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_home_recommended.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_program_profile_information.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_program_profile_information.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sign_up.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar_program_profile.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\toolbar_program_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_assignment.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_assignment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_program_profile_charge.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_program_profile_charge.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_active_class.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_active_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_main.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar_learningmethod.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\toolbar_learningmethod.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\learning_report.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\learning_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_home.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\assignment.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\assignment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_and_support.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\help_and_support.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_program_profile_contact.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_program_profile_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_home_schedule.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_home_schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_search.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_home_schedule.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_home_schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\learning_method.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\learning_method.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_ppcontact.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\fragment_ppcontact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_home_popular.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_home_popular.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_blank.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\fragment_blank.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_home_recommended.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_home_recommended.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_recommended.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\home_recommended.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_home_near_you.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_home_near_you.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_navigation_drawer.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tutor_profile.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\tutor_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_popular.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\home_popular.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_home_near_you.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_home_near_you.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_near_you.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\home_near_you.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_home_assignment.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_home_assignment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_program_profile_description.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_program_profile_description.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_item_learning_method.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\viewpager_item_learning_method.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_waiting_confirmation_class.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_waiting_confirmation_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_ppinformation.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\fragment_ppinformation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_schedule.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\my_schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\active_class.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\active_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\book_course.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\book_course.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\course_booked.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\course_booked.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_program_profile_learning_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_program_profile_learning_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_program_profile_comments.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\item_program_profile_comments.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\welcome_screen.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\welcome_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splash_screen.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_learning_category.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_learning_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\input_dialog.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\input_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\waiting_confirmation_class.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\waiting_confirmation_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_program_profile_schedule.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_program_profile_schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_schedule.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_program_profile.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_program_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\learning_category.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\learning_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\edit_profile.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pptestimonial.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\fragment_pptestimonial.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\signup_as_tutor_institute.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\signup_as_tutor_institute.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\star_points.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\star_points.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_schedule.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\home_schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_home_assignment.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_home_assignment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_home_popular.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_home_popular.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\popup_class_historyactive.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\popup_class_historyactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_navigation_drawer.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\fragment_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\program_profile.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\program_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_assignment.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\home_assignment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nestedscrollview_item_program_profile_contact.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\nestedscrollview_item_program_profile_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\exchange_star_points.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\exchange_star_points.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_history_class.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\layout\\list_item_history_class.xml"
+    }
+]

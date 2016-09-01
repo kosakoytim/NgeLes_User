@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NgeLes ALPHA</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- User NORMAL DATA -->
+    <string name="user_first_name">Timothy</string>
+
+    <!-- PROGRAM NORMAL DATA-->
+    <string name="class_title">English For Business</string>
+    <string name="class_days">Class every monday, tuesday, wednesday</string>
+    <string name="class_level">18++ / S1</string>
+    <string name="class_shift">18.00 - 20.00</string>
+    <string name="class_charge">200,000</string>
+
+    <!-- LIST VIEW ACTIVE CLASS-->
+    <string name="active_class_next_meet">Today</string>
+    <string name="active_class_time">18.00 - 20.00</string>
+
+    <!-- LIST VIEW HISTORY CLASS-->
+    <string name="history_class_start_date">16 Maret 2016</string>
+    <string name="history_class_end_date">21 November 2016</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- DUMMY -->
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at convallis quam, non vestibulum urna. Nunc ullamcorper porttitor augue, id tincidunt metus placerat at. Integer scelerisque aliquam accumsan. Aliquam pulvinar vel felis et viverra. Etiam in velit est. Aliquam erat volutpat. Suspendisse quis velit sed eros malesuada egestas in at dolor. Pellentesque placerat turpis sit amet justo aliquam egestas. Suspendisse ut posuere enim, a dictum lectus.</string>
+
+    <!-- FACEBOOK APP ID -->
+    <string name="facebook_app_id">382246335279028</string>
+    <string name="fb_login_protocol_scheme">fb382246335279028</string>
+</resources>

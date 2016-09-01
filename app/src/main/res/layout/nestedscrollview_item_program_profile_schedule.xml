@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="0dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule"
+            android:textColor="@color/id_color2"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/pp_day"
+                    android:text="Senin"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/pp_time"
+                    android:text="15.00-17.00"
+                    android:gravity="left"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/pp_day2"
+                    android:text="Selasa"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/pp_time2"
+                    android:text="15.00-17.00"
+                    android:gravity="left"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Rabu"
+                    android:id="@+id/pp_day3"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/pp_time3"
+                    android:text="15.00-17.00"
+                    android:gravity="left"
+                    android:padding="3dip" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,11 @@
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\R$menu$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\waiting_confirmation$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\R$layout$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\R$id$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\R$integer$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\home$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\R$style$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\R$styleable$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\ngelesalpha\R$string$override.class
+CHANGED,C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$id$override.class

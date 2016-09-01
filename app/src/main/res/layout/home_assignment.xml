@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/schedule"
+            android:id="@+id/imageView9" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Assignment"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/grey_800"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:gravity="left|center" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="See More..."
+            android:textColor="@color/grey_700"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:gravity="right|center" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_home_assignment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <!-- FORMS (Normal View) -->
+    <dimen name="width">250dp</dimen>
+    <dimen name="margin_bottom">14dp</dimen>
+
+    <!-- POPUP (Normal View) -->
+    <dimen name="popup_width">250dp</dimen>
+
+    <!-- TOOLBAR (Normal View) -->
+    <dimen name="toolbar_text_size">50dp</dimen>
+
+    <!-- LIST VIEW (Normal View) -->
+    <dimen name="normal_title">14sp</dimen>
+    <dimen name="normal_margin">7sp</dimen>
+    <dimen name="normal_left">11sp</dimen>
+    <dimen name="normal_right">11sp</dimen>
+</resources>

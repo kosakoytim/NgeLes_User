@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "661652328985",
+    "firebase_url": "https://ngeles-user.firebaseio.com",
+    "project_id": "ngeles-user",
+    "storage_bucket": "ngeles-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661652328985:android:ec771e81fed9a399",
+        "android_client_info": {
+          "package_name": "com.example.ngelesalpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661652328985-d4jt2lnr9k2esjefjb5qshv3raoa6ekf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl31Ne4ggrCMK9E6kcZG08uxDzv98kXOs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
