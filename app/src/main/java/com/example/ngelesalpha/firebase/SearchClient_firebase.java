@@ -20,31 +20,11 @@ import java.util.ArrayList;
  */
 public class SearchClient_firebase {
 
-   DatabaseReference db;
-    Boolean saved=null;
+   DatabaseReference db=FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/search");
     ArrayList<Search_model> search_models=new ArrayList<>();
 
     public SearchClient_firebase(DatabaseReference db) {
         this.db = db;
-    }
-
-    public Boolean save(Search_model search_model)
-    {
-        if(search_model==null)
-        {
-            saved=false;
-        }
-        else {
-            try {
-                db.child("search").push().setValue(search_model);
-                saved=true;
-            }catch (DatabaseException e)
-            {
-                e.printStackTrace();
-                saved=false;
-            }
-        }
-        return saved;
     }
 
     //Fetch Data
@@ -53,7 +33,7 @@ public class SearchClient_firebase {
         search_models.clear();
         for(DataSnapshot ds : dataSnapshot.getChildren())
         {
-            Search_model search_model=dataSnapshot.getValue(Search_model.class);
+            Search_model search_model=ds.getValue(Search_model.class);
             search_models.add(search_model);
         }
     }

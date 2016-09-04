@@ -28,15 +28,14 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class search extends ActionBarActivity {
 
-    final static String img_url = "https://ngeles-user.firebaseio.com/programprofile/search";
-//    DatabaseReference getRv_search_data = FirebaseDatabase.getInstance()
-//            .getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/search");
+    //Setup Toolbar
     Toolbar toolbar;
+
+    //Setup Firebase
     DatabaseReference db;
     SearchClient_firebase scb;
     RecyclerAdapterSearch adapterSearch;
     RecyclerView rv;
-//    EditText titleEditTxt,class_daysEditTxt,class_shiftEditTxt,class_chargeTxt,id_moneyTxt,charge_per_blankTxt,id_colorTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +80,7 @@ public class search extends ActionBarActivity {
         rv.setLayoutManager(mLinearLayoutManagerVertical);
 
         //Initialize Firebase DB
-        db= FirebaseDatabase.getInstance().getReference();
+        db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/");
         scb=new SearchClient_firebase(db);
 
         //Initialize Adapter

@@ -16,16 +16,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ngelesalpha.adapter.RecyclerAdapterHomePopular;
 import com.example.ngelesalpha.adapter.RecyclerAdapterHomeRecommended;
 import com.example.ngelesalpha.adapter.RecyclerAdapterHome_Assignment;
 import com.example.ngelesalpha.adapter.RecyclerAdapterHome_NearYou;
-import com.example.ngelesalpha.adapter.RecyclerAdapterHome_Popular;
 import com.example.ngelesalpha.adapter.RecyclerAdapterHome_Schedule;
+import com.example.ngelesalpha.firebase.Home_popularClient_firebase;
 import com.example.ngelesalpha.firebase.Home_recommendedClient_firebase;
 import com.example.ngelesalpha.fragment.NavigationDrawer_fragment;
 import com.example.ngelesalpha.model.Home_Assignment_model;
 import com.example.ngelesalpha.model.Home_NearYou_model;
-import com.example.ngelesalpha.model.Home_Popular_model;
 import com.example.ngelesalpha.model.Home_Schedule_model;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -48,13 +48,16 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 	private Button btnLogout;
 	private Button btnEditProfile;
 
-	//Set Up Firebase
+	//Setup Toolbar
+	Toolbar toolbar;
+
+	//Setup Firebase
 	DatabaseReference db;
 	Home_recommendedClient_firebase hrcb;
+	Home_popularClient_firebase hpcb;
 	RecyclerAdapterHomeRecommended adapterHomeRecommended;
+	RecyclerAdapterHomePopular adapterHomePopular;
 	RecyclerView rv;
-
-	Toolbar toolbar;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -97,9 +100,9 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 		//Set Home Content
 		setUpRecyclerView_recommended();
 		setUpRecyclerView_popular();
-		setUpRecyclerView_nearyou();
-		setUpRecyclerView_schedule();
-		setUpRecyclerView_assignment();
+//		setUpRecyclerView_nearyou();
+//		setUpRecyclerView_schedule();
+//		setUpRecyclerView_assignment();
 
 	}
 
@@ -160,30 +163,37 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 		getSupportActionBar().setTitle("");
 	}
 
-	private void setUpRecyclerView_nearyou()
-	{
-		RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerView_home_near_you);
-		RecyclerAdapterHome_NearYou adapter=new RecyclerAdapterHome_NearYou(this, Home_NearYou_model.getData());
-		recyclerView.setAdapter(adapter);
-
-		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
-		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
-		recyclerView.setLayoutManager(mLinearLayoutManagerHorizontal);
-
-		recyclerView.setItemAnimator(new DefaultItemAnimator());
-	}
+//	------------------FOR NEXT UPDATE
+//	private void setUpRecyclerView_nearyou()
+//	{
+//		RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerView_home_near_you);
+//		RecyclerAdapterHome_NearYou adapter=new RecyclerAdapterHome_NearYou(this, Home_NearYou_model.getData());
+//		recyclerView.setAdapter(adapter);
+//
+//		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
+//		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
+//		recyclerView.setLayoutManager(mLinearLayoutManagerHorizontal);
+//
+//		recyclerView.setItemAnimator(new DefaultItemAnimator());
+//	}
 
 	private void setUpRecyclerView_popular()
 	{
-		RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerView_home_popular);
-		RecyclerAdapterHome_Popular adapter=new RecyclerAdapterHome_Popular(this, Home_Popular_model.getData());
-		recyclerView.setAdapter(adapter);
-
+		//---------------------------------------------
+		//Initialize Recycler View
+		rv=(RecyclerView)findViewById(R.id.recyclerView_home_popular);
 		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
 		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
-		recyclerView.setLayoutManager(mLinearLayoutManagerHorizontal);
+		rv.setLayoutManager(mLinearLayoutManagerHorizontal);
 
-		recyclerView.setItemAnimator(new DefaultItemAnimator());
+		//Initialize Firebase DB
+		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/");
+		hpcb=new Home_popularClient_firebase(db);
+
+		//Initialize Adapter
+		adapterHomePopular = new RecyclerAdapterHomePopular(this,hpcb.retrieve());
+		rv.setAdapter(adapterHomePopular);
+		rv.setItemAnimator(new DefaultItemAnimator());
 	}
 
 	private void setUpRecyclerView_recommended()
@@ -196,7 +206,7 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 		rv.setLayoutManager(mLinearLayoutManagerHorizontal);
 
 		//Initialize Firebase DB
-		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/search");
+		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/");
 		hrcb=new Home_recommendedClient_firebase(db);
 
 		//Initialize Adapter
@@ -205,31 +215,33 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 		rv.setItemAnimator(new DefaultItemAnimator());
 	}
 
-	private void setUpRecyclerView_schedule()
-	{
-		RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerView_home_schedule);
-		RecyclerAdapterHome_Schedule adapter=new RecyclerAdapterHome_Schedule(this, Home_Schedule_model.getData());
-		recyclerView.setAdapter(adapter);
+//	------------------FOR NEXT UPDATE
+//	private void setUpRecyclerView_schedule()
+//	{
+//		RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerView_home_schedule);
+//		RecyclerAdapterHome_Schedule adapter=new RecyclerAdapterHome_Schedule(this, Home_Schedule_model.getData());
+//		recyclerView.setAdapter(adapter);
+//
+//		LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
+//		mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
+//		recyclerView.setLayoutManager(mLinearLayoutManagerVertical);
+//
+//		recyclerView.setItemAnimator(new DefaultItemAnimator());
+//	}
 
-		LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
-		mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
-		recyclerView.setLayoutManager(mLinearLayoutManagerVertical);
-
-		recyclerView.setItemAnimator(new DefaultItemAnimator());
-	}
-
-	private void setUpRecyclerView_assignment()
-	{
-		RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerView_home_assignment);
-		RecyclerAdapterHome_Assignment adapter=new RecyclerAdapterHome_Assignment(this, Home_Assignment_model.getData());
-		recyclerView.setAdapter(adapter);
-
-		LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
-		mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
-		recyclerView.setLayoutManager(mLinearLayoutManagerVertical);
-
-		recyclerView.setItemAnimator(new DefaultItemAnimator());
-	}
+//	------------------FOR NEXT UPDATE
+//	private void setUpRecyclerView_assignment()
+//	{
+//		RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recyclerView_home_assignment);
+//		RecyclerAdapterHome_Assignment adapter=new RecyclerAdapterHome_Assignment(this, Home_Assignment_model.getData());
+//		recyclerView.setAdapter(adapter);
+//
+//		LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
+//		mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
+//		recyclerView.setLayoutManager(mLinearLayoutManagerVertical);
+//
+//		recyclerView.setItemAnimator(new DefaultItemAnimator());
+//	}
 
 	private void setUpDrawer()
 	{

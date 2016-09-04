@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
@@ -96,6 +96,10 @@
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\class_active_icon.png",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\class_active_icon.png"
+    },
+    {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\test_online_learning.png",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\test_online_learning.png"
     },
@@ -106,6 +110,10 @@
     {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon.png",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\notification_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\class_history_icon.png",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\class_history_icon.png"
     },
     {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
@@ -134,6 +142,10 @@
     {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings_icon.png",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\settings_icon.png"
     },
     {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stylegroup.jpg",
@@ -252,8 +264,16 @@
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\people.png"
     },
     {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\class_status_icon.png",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\class_status_icon.png"
+    },
+    {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\customer_support_icon.png",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable\\customer_support_icon.png"
     },
     {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",

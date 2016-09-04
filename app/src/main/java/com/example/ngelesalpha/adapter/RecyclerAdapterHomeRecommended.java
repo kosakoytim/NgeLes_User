@@ -14,9 +14,7 @@ import android.widget.TextView;
 
 import com.example.ngelesalpha.R;
 import com.example.ngelesalpha.click_listener.Home_recommended_itemclicklistener;
-import com.example.ngelesalpha.click_listener.Search_itemclicklistener;
 import com.example.ngelesalpha.model.HomeRecommended_model;
-import com.example.ngelesalpha.model.Search_model;
 import com.example.ngelesalpha.program_profile;
 import com.squareup.picasso.Picasso;
 
@@ -48,9 +46,6 @@ public class RecyclerAdapterHomeRecommended extends RecyclerView.Adapter<Recycle
         holder.titleTxt.setText(s.getTitle());
         holder.class_daysTxt.setText(s.getClass_days());
         holder.class_shiftTxt.setText(s.getClass_shift());
-        holder.class_chargeTxt.setText(s.getClass_charge());
-        holder.id_moneyTxt.setText(s.getId_money());
-        holder.charge_per_blankTxt.setText(s.getCharge_per_blank());
         holder.id_colorTxt.setBackgroundColor(Color.parseColor(s.getId_color()));
         Uri uri = Uri.parse(s.getImageId());
         Picasso.with(c).load(uri).fit().centerInside().placeholder(R.drawable.styleonline).into(holder.id_imageTxt);
@@ -105,7 +100,22 @@ public class RecyclerAdapterHomeRecommended extends RecyclerView.Adapter<Recycle
                         //20
                         s.getStatus_recommended(),
                         //21
-                        s.getAddress_state_name()
+                        s.getAddress_state_name(),
+                        //22
+                        s.getCount_registrant(),
+                        //23
+                        s.getRegistration_start(),
+                        //24
+                        s.getRegistration_end(),
+                        //25
+                        s.getContact_email_address(),
+                        //26
+                        s.getContact_facebook(),
+                        //27
+                        s.getContact_phone(),
+                        //28
+                        s.getContact_web_page()
+
                 );
             }
         });
@@ -125,22 +135,29 @@ public class RecyclerAdapterHomeRecommended extends RecyclerView.Adapter<Recycle
         i.putExtra("CLASS_CHARGE_KEY",details[3]);
         i.putExtra("ID_MONEY_KEY",details[4]);
         i.putExtra("CHARGE_PER_BLANK_KEY",details[5]);
-        i.putExtra("ID_IMAGE",details[6]);
-        i.putExtra("ID_COLOR",details[7]);
-        i.putExtra("ADDRESS",details[8]);
-        i.putExtra("LEARNING_CATEGORY",details[9]);
-        i.putExtra("BRANCH",details[10]);
-        i.putExtra("STUDY_DURATION",details[11]);
-        i.putExtra("STUDY_PERIOD",details[12]);
-        i.putExtra("PAYMENT_DESCRIPTION",details[13]);
-        i.putExtra("DESCRIPTION",details[14]);
-        i.putExtra("LEARNING_METHOD",details[15]);
-        i.putExtra("AGE_MIN",details[16]);
-        i.putExtra("AGE_MAX",details[17]);
-        i.putExtra("BACKGROUND_IMAGE",details[18]);
-        i.putExtra("ID_COLOR2",details[19]);
-        i.putExtra("STATUS_RECOMMENDED",details[20]);
-        i.putExtra("ADDRESS_STATE_NAME",details[21]);
+        i.putExtra("ID_IMAGE_KEY",details[6]);
+        i.putExtra("ID_COLOR_KEY",details[7]);
+        i.putExtra("ADDRESS_KEY",details[8]);
+        i.putExtra("LEARNING_CATEGORY_KEY",details[9]);
+        i.putExtra("BRANCH_KEY",details[10]);
+        i.putExtra("STUDY_DURATION_KEY",details[11]);
+        i.putExtra("STUDY_PERIOD_KEY",details[12]);
+        i.putExtra("PAYMENT_DESCRIPTION_KEY",details[13]);
+        i.putExtra("DESCRIPTION_KEY",details[14]);
+        i.putExtra("LEARNING_METHOD_KEY",details[15]);
+        i.putExtra("AGE_MIN_KEY",details[16]);
+        i.putExtra("AGE_MAX_KEY",details[17]);
+        i.putExtra("BACKGROUND_IMAGE_KEY",details[18]);
+        i.putExtra("ID_COLOR2_KEY",details[19]);
+        i.putExtra("STATUS_RECOMMENDED_KEY",details[20]);
+        i.putExtra("ADDRESS_STATE_NAME_KEY",details[21]);
+        i.putExtra("COUNT_REGISTRANT_KEY",details[22]);
+        i.putExtra("REGISTRATION_START_KEY",details[23]);
+        i.putExtra("REGISTRATION_END_KEY",details[24]);
+        i.putExtra("CONTACT_EMAIL_ADDRESS_KEY",details[25]);
+        i.putExtra("CONTACT_FACEBOOK_KEY",details[26]);
+        i.putExtra("CONTACT_PHONE_KEY",details[27]);
+        i.putExtra("CONTACT_WEB_PAGE_KEY",details[28]);
         c.startActivity(i);
     }
 
@@ -149,13 +166,9 @@ public class RecyclerAdapterHomeRecommended extends RecyclerView.Adapter<Recycle
      */
     public static class Home_recommendedClient_holder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-
         TextView titleTxt;
         TextView class_daysTxt;
         TextView class_shiftTxt;
-        TextView class_chargeTxt;
-        TextView id_moneyTxt;
-        TextView charge_per_blankTxt;
         ImageView id_imageTxt;
         LinearLayout id_colorTxt;
         TextView address_state_nameTxt;
@@ -166,11 +179,11 @@ public class RecyclerAdapterHomeRecommended extends RecyclerView.Adapter<Recycle
         public Home_recommendedClient_holder(View itemView) {
             super(itemView);
 
-            titleTxt = (TextView)itemView.findViewById(R.id.search_title);
-            class_daysTxt = (TextView)itemView.findViewById(R.id.search_class_days);
-            class_shiftTxt = (TextView)itemView.findViewById(R.id.search_class_shift);
-            id_imageTxt = (ImageView)itemView.findViewById(R.id.search_image);
-            id_colorTxt = (LinearLayout)itemView.findViewById(R.id.search_color);
+            titleTxt = (TextView)itemView.findViewById(R.id.home_recommended_title);
+            class_daysTxt = (TextView)itemView.findViewById(R.id.home_recommended_class_days);
+            class_shiftTxt = (TextView)itemView.findViewById(R.id.home_recommended_class_shift);
+            id_imageTxt = (ImageView)itemView.findViewById(R.id.home_recommended_image);
+            id_colorTxt = (LinearLayout)itemView.findViewById(R.id.home_recommended_color);
             address_state_nameTxt = (TextView)itemView.findViewById(R.id.home_recommended_address_state_name);
             itemView.setOnClickListener(this);
         }

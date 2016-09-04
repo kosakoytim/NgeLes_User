@@ -27,6 +27,7 @@
 
 
 
+
             <ImageView
                 android:id="@+id/pp_header_bg"
                 android:layout_width="match_parent"
@@ -34,13 +35,14 @@
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
                 app:layout_collapseMode="parallax"/>
-
             <ImageView
                 android:id="@+id/pp_logo"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
+                android:src="@drawable/x"
                 />
+
 
             <include
                 android:id="@+id/toolbar"

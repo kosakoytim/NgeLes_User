@@ -94,9 +94,9 @@ public class NavigationDrawerItem_model {
     {
         return new int[]
                 {
-                        R.drawable.schedule, R.drawable.assignment, R.drawable.ic_launcher,
-                        R.drawable.ic_launcher, R.drawable.ic_launcher, R.drawable.ic_launcher,
-                        R.drawable.ic_launcher, R.drawable.ic_launcher
+                        R.drawable.schedule, R.drawable.assignment, R.drawable.class_active_icon,
+                        R.drawable.class_history_icon, R.drawable.class_status_icon,
+                        R.drawable.settings_icon, R.drawable.customer_support_icon
                 };
     }
 
@@ -105,7 +105,7 @@ public class NavigationDrawerItem_model {
         return new String[]
                 {
                         "My Schedule", "My Assignment", "Active Class",
-                        "Class History", "Class Status", "Star Points",
+                        "Class History", "Class Status",
                         "Settings", "Help and Support"
                 };
     }

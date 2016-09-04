@@ -29,9 +29,76 @@ public class HomeRecommended_model {
     String logo;
     String status_recommended;
     String address_state_name;
+    String count_registrant;
+    String registration_start;
+    String registration_end;
+    String contact_email_address;
+    String contact_facebook;
+    String contact_phone;
+    String contact_web_page;
 
 
+    public String getRegistration_start() {
+        return registration_start;
+    }
 
+    public void setRegistration_start(String registration_start) {
+        this.registration_start = registration_start;
+    }
+
+    public String getRegistration_end() {
+        return registration_end;
+    }
+
+    public void setRegistration_end(String registration_end) {
+        this.registration_end = registration_end;
+    }
+
+    public String getContact_email_address() {
+        return contact_email_address;
+    }
+
+    public void setContact_email_address(String contact_email_address) {
+        this.contact_email_address = contact_email_address;
+    }
+
+    public String getContact_facebook() {
+        return contact_facebook;
+    }
+
+    public void setContact_facebook(String contact_facebook) {
+        this.contact_facebook = contact_facebook;
+    }
+
+    public String getContact_phone() {
+        return contact_phone;
+    }
+
+    public void setContact_phone(String contact_phone) {
+        this.contact_phone = contact_phone;
+    }
+
+    public String getContact_web_page() {
+        return contact_web_page;
+    }
+
+    public void setContact_web_page(String contact_web_page) {
+        this.contact_web_page = contact_web_page;
+    }
+
+    public String getCount_registrant() {
+        return count_registrant;
+    }
+
+    public void setCount_registrant(String count_registrant) {
+        this.count_registrant = count_registrant;
+    }
+    public void setId_color(String id_color) {
+        this.id_color = id_color;
+    }
+    public String getId_color() {
+        return id_color;
+    }
     public String getAddress_state_name() {
         return address_state_name;
     }
@@ -141,14 +208,6 @@ public class HomeRecommended_model {
     //SETTER
 
 
-    public void setId_color(String id_color) {
-        this.id_color = id_color;
-    }
-
-    public void setTitle(String title){
-        this.title=title;
-    }
-
     public void setClass_days(String class_days){
         this.class_days=class_days;
     }
@@ -174,11 +233,6 @@ public class HomeRecommended_model {
     }
 
     //GETTER
-
-
-    public String getId_color() {
-        return id_color;
-    }
 
     public String getTitle()
     {
@@ -209,96 +263,5 @@ public class HomeRecommended_model {
     {
         return charge_per_blank;
     }
-
-//    public static ArrayList<Search_model> getData()
-//    {
-//        ArrayList<Search_model> dataList = new ArrayList<>();
-//        String[] images = getImages();
-//        String[] text1= getText1();
-//        String[] text2= getText2();
-//        String[] text3= getText3();
-//        int[] text4= getText4();
-//        String[] text5= getText5();
-//        String[] text6= getText6();
-//
-//        for(int i=0;i<images.length;i++)
-//        {
-//            Search_model searchModel =new Search_model();
-//            searchModel.setImageId(images[i]);
-//            searchModel.setTitle(text1[i]);
-//            searchModel.setClass_days("Class every "+ text2[i]);
-//            searchModel.setClass_shift(text3[i]);
-//            searchModel.setClass_charge(text4[i]);
-//            searchModel.setId_money(text5[i]);
-//            searchModel.setCharge_per_blank(text6[i]);
-//            dataList.add(searchModel);
-//        }
-//
-//        return dataList;
-//    }
-//
-//    public static String[] getImages(){
-//
-//        String[] images={
-//                R.drawable.test_institute, R.drawable.test_institute, R.drawable.test_institute, R.drawable.test_institute, R.drawable.test_institute,
-//                R.drawable.test_institute, R.drawable.test_institute, R.drawable.test_institute, R.drawable.test_institute, R.drawable.test_institute,
-//        };
-//
-//        return images;
-//    }
-//
-//    public static String[] getText1(){
-//
-//        String[] text1={
-//                "Business Model","Business Model","Business Model","Business Model","Business Model","Business Model","Business Model","Business Model","Business Model","Business Model"
-//        };
-//
-//        return text1;
-//    }
-//
-//    public static String[] getText2(){
-//
-//        String[] text2={
-//                "Monday","Monday","Monday","Monday","Monday","Monday","Monday","Monday","Monday","Monday"
-//        };
-//
-//        return text2;
-//    }
-//
-//    public static String[] getText3(){
-//
-//        String[] text3={
-//                "13.00-14.00","13.00-14.00","13.00-14.00","13.00-14.00","13.00-14.00","13.00-14.00","13.00-14.00","13.00-14.00","13.00-14.00","13.00-14.00"
-//        };
-//
-//        return text3;
-//    }
-//
-//    public static int[] getText4(){
-//
-//        int[] text4={
-//                10000,10000,10000,10000,10000,10000,10000,10000,10000,10000
-//        };
-//
-//        return text4;
-//    }
-//
-//    public static String[] getText5(){
-//
-//        String[] text5={
-//                "IDR","IDR","IDR","IDR","IDR","IDR","IDR","IDR","IDR","IDR"
-//        };
-//
-//        return text5;
-//    }
-//
-//    public static String[] getText6(){
-//
-//        String[] text6={
-//                "/month","/month","/month","/month","/month","/month","/month","/month","/month","/month"
-//        };
-//
-//        return text6;
-//    }
 
 }

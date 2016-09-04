@@ -29,7 +29,7 @@ public class Home_recommendedClient_firebase {
         homeRecommended_models.clear();
         for(DataSnapshot ds : dataSnapshot.getChildren())
         {
-            HomeRecommended_model homeRecommended_model=dataSnapshot.getValue(HomeRecommended_model.class);
+            HomeRecommended_model homeRecommended_model=ds.getValue(HomeRecommended_model.class);
             homeRecommended_models.add(homeRecommended_model);
         }
     }
