@@ -1,6 +1,7 @@
 package com.example.ngelesalpha;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Build;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBarActivity;
@@ -57,7 +58,25 @@ public class search extends ActionBarActivity {
 
 
 
-        setUpRecyclerView();
+//        setUpRecyclerView();
+        //Initialize Recycler View
+        rv=(RecyclerView)findViewById(R.id.recyclerView);
+        LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
+        mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
+        rv.setLayoutManager(mLinearLayoutManagerVertical);
+
+        //Initialize Firebase DB
+        Intent intent= getIntent();
+        String child=intent.getExtras().getString("CATEGORY_KEY");
+        db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/"+ child);
+        scb=new SearchClient_firebase(db);
+
+        //Initialize Adapter
+        adapterSearch = new RecyclerAdapterSearch(this,scb.retrieve());
+        rv.setAdapter(adapterSearch);
+        rv.setItemAnimator(new DefaultItemAnimator());
+
+
         displayInputDialog();
         floatingactionbutton();
     }
@@ -71,23 +90,25 @@ public class search extends ActionBarActivity {
         });
     }
 
-    private void setUpRecyclerView()
-    {
-        //Initialize Recycler View
-        rv=(RecyclerView)findViewById(R.id.recyclerView);
-        LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
-        mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
-        rv.setLayoutManager(mLinearLayoutManagerVertical);
-
-        //Initialize Firebase DB
-        db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/");
-        scb=new SearchClient_firebase(db);
-
-        //Initialize Adapter
-        adapterSearch = new RecyclerAdapterSearch(this,scb.retrieve());
-        rv.setAdapter(adapterSearch);
-        rv.setItemAnimator(new DefaultItemAnimator());
-    }
+//    private void setUpRecyclerView()
+//    {
+//        //Initialize Recycler View
+//        rv=(RecyclerView)findViewById(R.id.recyclerView);
+//        LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
+//        mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
+//        rv.setLayoutManager(mLinearLayoutManagerVertical);
+//
+//        //Initialize Firebase DB
+//        Intent intent= getIntent();
+//        String child=intent.getExtras().getString("CATEGORY_KEY");
+//        db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/"+ child);
+//        scb=new SearchClient_firebase(db);
+//
+//        //Initialize Adapter
+//        adapterSearch = new RecyclerAdapterSearch(this,scb.retrieve());
+//        rv.setAdapter(adapterSearch);
+//        rv.setItemAnimator(new DefaultItemAnimator());
+//    }
 
 
     //TESTING

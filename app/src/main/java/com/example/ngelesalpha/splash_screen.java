@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Window;
 import android.view.WindowManager;
@@ -17,11 +18,13 @@ import com.google.firebase.auth.FirebaseAuth;
 public class splash_screen extends ActionBarActivity {
 
     private FirebaseAuth firebaseAuth;
+    /** Duration of wait **/
+    private final int SPLASH_DISPLAY_LENGTH = 1000;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.splash_screen);
 
         //check if we're running on android 5.0 or higher
         if (Build.VERSION.SDK_INT >= 21) {
@@ -37,18 +40,25 @@ public class splash_screen extends ActionBarActivity {
 
         }
 
-        //Initialize Firebase Authentication
-        firebaseAuth= FirebaseAuth.getInstance();
-        if(firebaseAuth.getCurrentUser()!=null){
-            finish();
-            Intent i = new Intent(splash_screen.this,home.class);
-            startActivity(i);
-        }
-        else
-        {
-            Intent i = new Intent(splash_screen.this,login.class);
-            startActivity(i);
-        }
+        /* New Handler to start the Menu-Activity
+         * and close this Splash-Screen after some seconds.*/
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run() {
+                //Initialize Firebase Authentication
+                firebaseAuth= FirebaseAuth.getInstance();
+                if(firebaseAuth.getCurrentUser()!=null){
+                    finish();
+                    Intent i = new Intent(splash_screen.this,home.class);
+                    startActivity(i);
+                }
+                else
+                {
+                    Intent i = new Intent(splash_screen.this,login.class);
+                    startActivity(i);
+                }
+            }
+        }, SPLASH_DISPLAY_LENGTH);
 
     }
 }

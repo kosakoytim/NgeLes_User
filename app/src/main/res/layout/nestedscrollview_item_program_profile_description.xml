@@ -4,8 +4,8 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="0dp"
-    android:layout_marginRight="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     android:layout_marginTop="5dp"
     card_view:cardCornerRadius="0dp"
     android:focusable="true"
@@ -18,17 +18,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Description"
-            android:textColor="@color/id_color2"
-            android:textSize="17sp"
-            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/pp_description"

@@ -45,6 +45,36 @@ public class RecycleAdapterLearningCategory extends RecyclerView.Adapter<Recycle
 
         holder.itemView.setOnClickListener((v)-> {
             Intent a = new Intent(v.getContext(),search.class);
+            if(position==0)
+            {
+                //pass string bimbelsmax here
+                String child = "bimbel_sma_x";
+                a.putExtra("CATEGORY_KEY",child);
+            }
+            else if(position==1)
+            {
+                //pass string bimbelsmaxi here
+                String child = "bimbel_sma_xi";
+                a.putExtra("CATEGORY_KEY",child);
+            }
+            else if(position==2)
+            {
+                //pass string bimbelsmaxii here
+                String child = "bimbel_sma_xii";
+                a.putExtra("CATEGORY_KEY",child);
+            }
+            else if(position==3)
+            {
+                //pass string graphicdesign here
+                String child = "graphic_design";
+                a.putExtra("CATEGORY_KEY",child);
+            }
+            else if(position==4)
+            {
+                //pass string softwaredev here
+                String child = "software_development";
+                a.putExtra("CATEGORY_KEY",child);
+            }
             context.startActivity(a);
         });
     }

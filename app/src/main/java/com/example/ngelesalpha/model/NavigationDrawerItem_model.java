@@ -96,7 +96,7 @@ public class NavigationDrawerItem_model {
                 {
                         R.drawable.schedule, R.drawable.assignment, R.drawable.class_active_icon,
                         R.drawable.class_history_icon, R.drawable.class_status_icon,
-                        R.drawable.settings_icon, R.drawable.customer_support_icon
+                        R.drawable.settings_icon, R.drawable.customer_support_icon,R.drawable.post_a_course_program_icon,R.drawable.log_out_icon
                 };
     }
 
@@ -106,7 +106,7 @@ public class NavigationDrawerItem_model {
                 {
                         "My Schedule", "My Assignment", "Active Class",
                         "Class History", "Class Status",
-                        "Settings", "Help and Support"
+                        "Settings", "Help and Support","Post A Course Program","Log Out"
                 };
     }
 

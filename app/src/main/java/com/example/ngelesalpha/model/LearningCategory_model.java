@@ -51,7 +51,6 @@ public class LearningCategory_model {
     public static int[] getImages(){
 
         int[] images={
-                R.drawable.assignment,R.drawable.assignment,R.drawable.assignment,R.drawable.assignment,R.drawable.assignment,
                 R.drawable.assignment,R.drawable.assignment,R.drawable.assignment,R.drawable.assignment,R.drawable.assignment
         };
 
@@ -61,7 +60,7 @@ public class LearningCategory_model {
     public static String[] getText(){
 
         String[] text={
-                "Matematika","Bahasa Inggris","Bahasa Mandarin","Komputer","Paket Bimbel","Category","Category","Category","Category","Category"
+                "Bimbel SMA X","Bimbel SMA XI","Bimbel SMA XII","Graphic Design","Software Development"
         };
 
         return text;

@@ -11,11 +11,103 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/id_color2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
         <include layout="@layout/nestedscrollview_item_program_profile_description"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"
+            android:background="@color/grey_400"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schedule"
+            android:textColor="@color/id_color2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
         <include layout="@layout/nestedscrollview_item_program_profile_schedule"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"
+            android:background="@color/grey_400"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="@color/id_color2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
         <include layout="@layout/nestedscrollview_item_program_profile_location"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"
+            android:background="@color/grey_400"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charge"
+            android:textColor="@color/id_color2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
         <include layout="@layout/nestedscrollview_item_program_profile_charge"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"
+            android:background="@color/grey_400"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learning Material"
+            android:textColor="@color/id_color2"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
         <include layout="@layout/nestedscrollview_item_program_profile_learning_material"/>
+
+        <!-- BOTTOM MARGIN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"></LinearLayout>
 
     </LinearLayout>
 

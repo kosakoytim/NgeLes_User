@@ -72,6 +72,7 @@ public class RecyclerAdapterHomeNavigationDrawer extends RecyclerView.Adapter<Re
         });
     }
 
+
     public int getItemCount()
     {
         return mData.size();

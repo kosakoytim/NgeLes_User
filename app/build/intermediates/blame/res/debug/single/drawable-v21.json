@@ -24,6 +24,10 @@
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ripple_bordered_custom.xml"
     },
     {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\gradient_black_to_transparent_program_profile.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\gradient_black_to_transparent_program_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ripple_bordered_teal.xml",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ripple_bordered_teal.xml"
     },

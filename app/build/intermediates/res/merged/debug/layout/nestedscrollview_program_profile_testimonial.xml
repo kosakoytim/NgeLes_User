@@ -19,6 +19,12 @@
         <include layout="@layout/item_program_profile_comments"/>
         <include layout="@layout/item_program_profile_comments"/>
 
+        <!-- BOTTOM MARGIN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"></LinearLayout>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

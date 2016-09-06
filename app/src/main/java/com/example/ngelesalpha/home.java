@@ -57,7 +57,7 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 	Home_popularClient_firebase hpcb;
 	RecyclerAdapterHomeRecommended adapterHomeRecommended;
 	RecyclerAdapterHomePopular adapterHomePopular;
-	RecyclerView rv;
+	RecyclerView rv_hr,rv_hp;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -98,8 +98,41 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 
 
 		//Set Home Content
-		setUpRecyclerView_recommended();
-		setUpRecyclerView_popular();
+//		setUpRecyclerView_recommended();
+		//---------------------------------------------
+		//Initialize Recycler View
+		rv_hr=(RecyclerView)findViewById(R.id.recyclerView_home_recommended);
+		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
+		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
+		rv_hr.setLayoutManager(mLinearLayoutManagerHorizontal);
+
+		//Initialize Firebase DB
+		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/RECOMMENDED/");
+		hrcb=new Home_recommendedClient_firebase(db);
+
+		//Initialize Adapter
+		adapterHomeRecommended = new RecyclerAdapterHomeRecommended(this,hrcb.retrieve());
+		rv_hr.setAdapter(adapterHomeRecommended);
+		rv_hr.setItemAnimator(new DefaultItemAnimator());
+
+
+//		setUpRecyclerView_popular();
+		//---------------------------------------------
+		//Initialize Recycler View
+		rv_hp=(RecyclerView)findViewById(R.id.recyclerView_home_popular);
+		LinearLayoutManager mLinearLayoutManagerHorizontal_2 = new LinearLayoutManager(this);
+		mLinearLayoutManagerHorizontal_2.setOrientation(LinearLayoutManager.HORIZONTAL);
+		rv_hp.setLayoutManager(mLinearLayoutManagerHorizontal_2);
+
+		//Initialize Firebase DB
+		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/POPULAR/");
+		hpcb=new Home_popularClient_firebase(db);
+
+		//Initialize Adapter
+		adapterHomePopular = new RecyclerAdapterHomePopular(this,hpcb.retrieve());
+		rv_hp.setAdapter(adapterHomePopular);
+		rv_hp.setItemAnimator(new DefaultItemAnimator());
+
 //		setUpRecyclerView_nearyou();
 //		setUpRecyclerView_schedule();
 //		setUpRecyclerView_assignment();
@@ -177,43 +210,43 @@ public class home extends ActionBarActivity implements View.OnClickListener {
 //		recyclerView.setItemAnimator(new DefaultItemAnimator());
 //	}
 
-	private void setUpRecyclerView_popular()
-	{
-		//---------------------------------------------
-		//Initialize Recycler View
-		rv=(RecyclerView)findViewById(R.id.recyclerView_home_popular);
-		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
-		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
-		rv.setLayoutManager(mLinearLayoutManagerHorizontal);
+//	private void setUpRecyclerView_popular()
+//	{
+//		//---------------------------------------------
+//		//Initialize Recycler View
+//		rv=(RecyclerView)findViewById(R.id.recyclerView_home_popular);
+//		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
+//		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
+//		rv.setLayoutManager(mLinearLayoutManagerHorizontal);
+//
+//		//Initialize Firebase DB
+//		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/");
+//		hpcb=new Home_popularClient_firebase(db);
+//
+//		//Initialize Adapter
+//		adapterHomePopular = new RecyclerAdapterHomePopular(this,hpcb.retrieve());
+//		rv.setAdapter(adapterHomePopular);
+//		rv.setItemAnimator(new DefaultItemAnimator());
+//	}
 
-		//Initialize Firebase DB
-		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/");
-		hpcb=new Home_popularClient_firebase(db);
-
-		//Initialize Adapter
-		adapterHomePopular = new RecyclerAdapterHomePopular(this,hpcb.retrieve());
-		rv.setAdapter(adapterHomePopular);
-		rv.setItemAnimator(new DefaultItemAnimator());
-	}
-
-	private void setUpRecyclerView_recommended()
-	{
-		//---------------------------------------------
-		//Initialize Recycler View
-		rv=(RecyclerView)findViewById(R.id.recyclerView_home_recommended);
-		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
-		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
-		rv.setLayoutManager(mLinearLayoutManagerHorizontal);
-
-		//Initialize Firebase DB
-		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/");
-		hrcb=new Home_recommendedClient_firebase(db);
-
-		//Initialize Adapter
-		adapterHomeRecommended = new RecyclerAdapterHomeRecommended(this,hrcb.retrieve());
-		rv.setAdapter(adapterHomeRecommended);
-		rv.setItemAnimator(new DefaultItemAnimator());
-	}
+//	private void setUpRecyclerView_recommended()
+//	{
+//		//---------------------------------------------
+//		//Initialize Recycler View
+//		rv=(RecyclerView)findViewById(R.id.recyclerView_home_recommended);
+//		LinearLayoutManager mLinearLayoutManagerHorizontal = new LinearLayoutManager(this);
+//		mLinearLayoutManagerHorizontal.setOrientation(LinearLayoutManager.HORIZONTAL);
+//		rv.setLayoutManager(mLinearLayoutManagerHorizontal);
+//
+//		//Initialize Firebase DB
+//		db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/");
+//		hrcb=new Home_recommendedClient_firebase(db);
+//
+//		//Initialize Adapter
+//		adapterHomeRecommended = new RecyclerAdapterHomeRecommended(this,hrcb.retrieve());
+//		rv.setAdapter(adapterHomeRecommended);
+//		rv.setItemAnimator(new DefaultItemAnimator());
+//	}
 
 //	------------------FOR NEXT UPDATE
 //	private void setUpRecyclerView_schedule()

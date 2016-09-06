@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class Home_popularClient_firebase {
 
-   DatabaseReference db = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/search");
+   DatabaseReference db;
     ArrayList<HomePopular_model> homePopular_models=new ArrayList<>();
 
     public Home_popularClient_firebase(DatabaseReference db) {

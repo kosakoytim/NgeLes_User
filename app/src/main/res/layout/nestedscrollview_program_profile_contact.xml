@@ -11,11 +11,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/nestedscrollview_item_program_profile_contact"/>
-        <include layout="@layout/nestedscrollview_item_program_profile_contact"/>
-        <include layout="@layout/nestedscrollview_item_program_profile_contact"/>
-        <include layout="@layout/nestedscrollview_item_program_profile_contact"/>
+        <include layout="@layout/nestedscrollview_item_program_profile_contact_email_address"/>
+        <include layout="@layout/nestedscrollview_item_program_profile_contact_phone"/>
+        <include layout="@layout/nestedscrollview_item_program_profile_contact_facebook"/>
+        <include layout="@layout/nestedscrollview_item_program_profile_contact_web_page"/>
 
+        <!-- BOTTOM MARGIN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"></LinearLayout>
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
