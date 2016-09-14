@@ -5,6 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -26,9 +28,25 @@
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
         android:tint="@color/colorAccent"
-        app:backgroundTint="@color/accentYellow"
+        app:backgroundTint="@color/colorPrimaryDarker"
+        app:rippleColor="@color/colorPrimaryDark"
         app:fabSize="normal"
         />
 
-
+    <LinearLayout
+        android:id="@+id/progressBar_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100"
+        android:gravity="center">
+        <com.bhargavms.dotloader.DotLoader
+            android:id="@+id/text_dot_loader"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color_array="@array/dot_colors"
+            app:dot_radius="4dp"
+            app:number_of_dots="3"/>
+            />
+    </LinearLayout>
 </FrameLayout>

@@ -51,8 +51,8 @@ public class RecyclerAdapterSearch extends RecyclerView.Adapter<RecyclerAdapterS
         holder.charge_per_blankTxt.setText(s.getCharge_per_blank());
         holder.id_colorTxt.setBackgroundColor(Color.parseColor(s.getId_color()));
         Uri uri = Uri.parse(s.getImageId());
-        Picasso.with(c).load(uri).fit().centerInside().placeholder(R.drawable.styleonline).into(holder.id_imageTxt);
-
+        Picasso.with(c).load(uri).fit().centerInside().into(holder.id_imageTxt);
+        //placeholder(R.drawable.styleonline). (PICASSO)
 
 
         holder.setSearch_itemclicklistener(new Search_itemclicklistener() {

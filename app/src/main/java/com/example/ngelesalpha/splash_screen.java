@@ -49,7 +49,7 @@ public class splash_screen extends ActionBarActivity {
                 firebaseAuth= FirebaseAuth.getInstance();
                 if(firebaseAuth.getCurrentUser()!=null){
                     finish();
-                    Intent i = new Intent(splash_screen.this,home.class);
+                    Intent i = new Intent(splash_screen.this,Index.class);
                     startActivity(i);
                 }
                 else

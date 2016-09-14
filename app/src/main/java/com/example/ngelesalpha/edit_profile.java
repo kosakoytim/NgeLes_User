@@ -151,7 +151,7 @@ public class edit_profile extends ActionBarActivity implements View.OnClickListe
         pp_database.child(uid).child("name").setValue(name);
         pp_database.child(uid).child("email").setValue(email);
         pp_database.child(uid).child("phone_number").setValue(phone_number);
-        Intent i = new Intent(edit_profile.this,home.class);
+        Intent i = new Intent(edit_profile.this,Index.class);
         startActivity(i);
     }
 

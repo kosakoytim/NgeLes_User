@@ -49,8 +49,8 @@ public class RecyclerAdapterHomePopular extends RecyclerView.Adapter<RecyclerAda
         holder.countRegistrantTxt.setText(s.getCount_registrant());
         holder.id_colorTxt.setBackgroundColor(Color.parseColor(s.getId_color()));
         Uri uri = Uri.parse(s.getImageId());
-        Picasso.with(c).load(uri).fit().centerInside().placeholder(R.drawable.styleonline).into(holder.id_imageTxt);
-
+        Picasso.with(c).load(uri).fit().centerInside().into(holder.id_imageTxt);
+        //placeholder(R.drawable.styleonline). (PICASSO)
 
         holder.setHome_popularClient_holder(new Home_popular_itemclicklistener() {
             @Override

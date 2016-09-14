@@ -2,6 +2,12 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.github.bhargavms\DotLoader\1.0.0\jars\classes.jar"
+        revision="24.0.0"
+        sha1="5e8446dfc7e4e40d6fb6b8fa1f5bc3547154e72e">
+        <dex dex="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\jill\debug\packaged\classes-f47aa75910f7694782d5b234f98e87400cdc4058.jar" />
+    </item>
+    <item
         jar="C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\jars\classes.jar"
         revision="24.0.0"
         sha1="820605b42a2d3d9cb9e6c4cc7453fb4f802aedff">

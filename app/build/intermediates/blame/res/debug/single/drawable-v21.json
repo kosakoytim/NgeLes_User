@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ripple_bordered_green.xml"
     },
     {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_send.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ic_menu_send.xml"
+    },
+    {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
@@ -28,11 +32,31 @@
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\gradient_black_to_transparent_program_profile.xml"
     },
     {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_slideshow.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_share.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_manage.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_camera.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ripple_bordered_teal.xml",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ripple_bordered_teal.xml"
     },
     {
         "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\ic_menu_gallery.xml",
+        "source": "C:\\Users\\Timothy\\Desktop\\NgeLes On Android\\NgeLesAlpha1\\app\\src\\main\\res\\drawable-v21\\ic_menu_gallery.xml"
     }
 ]

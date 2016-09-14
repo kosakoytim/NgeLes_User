@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:2:1-349:12
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:2:1-373:12
 	package
 		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:4:5-38
 		INJECTED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml
@@ -186,6 +186,7 @@ MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\Timothy\
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
 MERGED from [com.makeramen:roundedimageview:2.2.1] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.makeramen\roundedimageview\2.2.1\AndroidManifest.xml:7:5-43
+MERGED from [com.github.bhargavms:DotLoader:1.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.github.bhargavms\DotLoader\1.0.0\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:11:9-73
 	android:targetSdkVersion
@@ -203,8 +204,20 @@ MERGED from [com.google.firebase:firebase-analytics-impl:9.4.0] C:\Users\Timothy
 MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\AndroidManifest.xml:21:5-67
 	android:name
 		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:13:22-64
+android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:15:5-89
+	android:name
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:15:30-86
+android:uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:16:5-83
+	android:name
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:16:30-80
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:17:5-88
+	android:name
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:17:30-85
 application
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:19:5-347:19
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:21:5-371:19
 MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:24.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
@@ -363,285 +376,304 @@ MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Timothy\Desktop\Nge
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.github.bhargavms:DotLoader:1.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.github.bhargavms\DotLoader\1.0.0\AndroidManifest.xml:11:5-15:19
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:24:9-41
+	android:supportsRtl
+		ADDED from [com.github.bhargavms:DotLoader:1.0.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.github.bhargavms\DotLoader\1.0.0\AndroidManifest.xml:14:9-35
 	android:allowBackup
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:22:9-35
 	android:icon
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:21:9-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:23:9-45
 	android:theme
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:23:9-40
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:25:9-40
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:26:9-28:55
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:28:9-30:55
 	android:value
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:28:13-52
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:30:13-52
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:27:13-58
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:29:13-58
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:30:9-34:75
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:32:9-36:75
 MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\AndroidManifest.xml:29:9-32:75
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:33:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:35:13-45
 	android:configChanges
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:32:13-96
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:34:13-96
 	android:theme
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:34:13-72
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:36:13-72
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:31:13-57
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:33:13-57
 activity#com.example.ngelesalpha.active_class
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:37:9-46:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:39:9-48:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:40:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:42:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:39:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:41:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:38:13-41
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:40:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:41:13-45:29
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:42:17-69
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:42:25-66
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:44:17-76
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:46:17-76
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:44:27-73
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:46:27-73
 activity#com.example.ngelesalpha.assignment
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:49:9-58:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:51:9-60:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:52:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:54:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:51:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:53:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:50:13-39
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:52:13-39
 intent-filter#android.intent.category.DEFAULT+test.action.assignment
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:53:13-57:29
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:55:13-59:29
 action#test.action.assignment
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:54:17-65
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:56:17-65
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:54:25-62
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:56:25-62
 activity#com.example.ngelesalpha.book_course
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:61:9-70:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:63:9-72:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:64:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:66:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:63:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:65:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:62:13-40
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:64:13-40
 activity#com.example.ngelesalpha.course_booked
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:73:9-82:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:75:9-84:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:76:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:78:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:75:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:77:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:74:13-42
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:76:13-42
 activity#com.example.ngelesalpha.edit_profile
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:85:9-94:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:87:9-96:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:88:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:90:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:87:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:89:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:86:13-41
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:88:13-41
 activity#com.example.ngelesalpha.exchange_star_points
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:97:9-106:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:99:9-108:20
 	android:screenOrientation
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:102:13-49
+	android:label
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:101:13-45
+	android:name
 		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:100:13-49
-	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:99:13-45
-	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:98:13-49
 activity#com.example.ngelesalpha.help_and_support
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:109:9-118:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:111:9-120:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:112:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:114:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:111:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:113:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:110:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:112:13-45
 intent-filter#android.intent.category.DEFAULT+test.action.help_and_support
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:113:13-117:29
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:115:13-119:29
 action#test.action.help_and_support
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:114:17-71
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:116:17-71
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:114:25-68
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:116:25-68
 activity#com.example.ngelesalpha.history
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:121:9-130:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:123:9-132:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:124:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:126:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:123:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:125:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:122:13-36
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:124:13-36
 activity#com.example.ngelesalpha.home
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:133:9-142:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:135:9-144:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:136:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:138:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:135:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:137:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:134:13-33
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:136:13-33
 activity#com.example.ngelesalpha.learning_category
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:145:9-154:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:147:9-156:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:148:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:150:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:147:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:149:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:146:13-46
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:148:13-46
 activity#com.example.ngelesalpha.learning_method
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:157:9-166:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:159:9-168:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:160:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:162:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:159:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:161:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:158:13-44
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:160:13-44
 activity#com.example.ngelesalpha.learning_report
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:169:9-178:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:171:9-180:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:172:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:174:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:171:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:173:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:170:13-44
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:172:13-44
 activity#com.example.ngelesalpha.login
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:181:9-190:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:183:9-192:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:184:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:186:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:183:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:185:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:182:13-34
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:184:13-34
 activity#com.example.ngelesalpha.my_schedule
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:193:9-202:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:195:9-204:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:196:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:198:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:195:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:197:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:194:13-40
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:196:13-40
 activity#com.example.ngelesalpha.notification
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:205:9-214:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:207:9-216:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:208:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:210:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:207:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:209:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:206:13-41
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:208:13-41
 activity#com.example.ngelesalpha.payment_method
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:217:9-226:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:219:9-228:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:220:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:222:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:219:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:221:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:218:13-43
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:220:13-43
 intent-filter#android.intent.category.DEFAULT+test.action.payment_method
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:221:13-225:29
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:223:13-227:29
 action#test.action.payment_method
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:222:17-69
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:224:17-69
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:222:25-66
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:224:25-66
 activity#com.example.ngelesalpha.program_profile
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:229:9-238:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:231:9-240:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:232:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:234:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:231:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:233:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:230:13-44
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:232:13-44
 activity#com.example.ngelesalpha.search
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:241:9-250:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:243:9-252:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:244:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:246:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:243:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:245:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:242:13-35
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:244:13-35
+activity#com.example.ngelesalpha.search_filtersort
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:255:9-264:20
+	android:screenOrientation
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:258:13-49
+	android:label
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:257:13-45
+	android:name
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:256:13-46
 activity#com.example.ngelesalpha.settings
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:253:9-262:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:267:9-276:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:256:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:270:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:255:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:269:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:254:13-37
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:268:13-37
 intent-filter#android.intent.category.DEFAULT+test.action.settings
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:257:13-261:29
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:271:13-275:29
 action#test.action.settings
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:258:17-63
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:272:17-63
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:258:25-60
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:272:25-60
 activity#com.example.ngelesalpha.sign_up
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:265:9-274:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:279:9-288:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:268:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:282:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:267:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:281:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:266:13-36
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:280:13-36
 activity#com.example.ngelesalpha.sign_up_as_tutor_institute
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:277:9-286:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:291:9-300:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:280:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:294:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:279:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:293:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:278:13-55
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:292:13-55
 activity#com.example.ngelesalpha.splash_screen
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:289:9-298:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:303:9-312:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:292:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:306:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:291:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:305:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:290:13-42
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:304:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:293:13-297:29
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:307:13-311:29
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:296:17-77
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:310:17-77
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:296:27-74
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:310:27-74
 activity#com.example.ngelesalpha.star_points
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:301:9-310:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:315:9-324:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:304:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:318:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:303:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:317:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:302:13-40
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:316:13-40
 intent-filter#android.intent.category.DEFAULT+test.action.star_points
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:305:13-309:29
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:319:13-323:29
 action#test.action.star_points
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:306:17-66
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:320:17-66
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:306:25-63
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:320:25-63
 activity#com.example.ngelesalpha.tutor_profile
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:313:9-322:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:327:9-336:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:316:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:330:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:315:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:329:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:314:13-42
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:328:13-42
 activity#com.example.ngelesalpha.waiting_confirmation
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:325:9-334:20
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:339:9-348:20
 	android:screenOrientation
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:328:13-49
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:342:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:327:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:341:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:326:13-49
-activity#com.example.ngelesalpha.welcome_screen
-ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:337:9-346:20
-	android:screenOrientation
 		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:340:13-49
+activity#com.example.ngelesalpha.welcome_screen
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:351:9-360:20
+	android:screenOrientation
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:354:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:339:13-45
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:353:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:338:13-43
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:352:13-43
+activity#com.example.ngelesalpha.Index
+ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:361:9-370:20
+	android:screenOrientation
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:364:13-49
+	android:label
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:363:13-57
+	android:name
+		ADDED from C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\src\main\AndroidManifest.xml:362:13-34
 activity#com.facebook.CustomTabActivity
 ADDED from [com.facebook.android:facebook-android-sdk:4.15.0] C:\Users\Timothy\Desktop\NgeLes On Android\NgeLesAlpha1\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\AndroidManifest.xml:33:9-36:20
 	android:exported

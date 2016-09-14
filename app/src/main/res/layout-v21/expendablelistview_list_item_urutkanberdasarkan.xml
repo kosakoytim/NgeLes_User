@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_urutkanberdasarkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp">
+
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:text="Rekomendasi Kami"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_rekomendasi_kami"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Termurah"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_termurah"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Terdekat"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_terdekat"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Terpopuler"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_terpopuler"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked_sort_urutkanberdasarkan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Termahal"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_termahal"
+            android:buttonTint="@color/accentYellow"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

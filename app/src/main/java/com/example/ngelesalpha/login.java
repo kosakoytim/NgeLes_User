@@ -85,7 +85,7 @@ public class login extends ActionBarActivity implements View.OnClickListener {
         firebaseAuth=FirebaseAuth.getInstance();
         if(firebaseAuth.getCurrentUser()!=null){
             finish();
-            Intent i = new Intent(login.this,home.class);
+            Intent i = new Intent(login.this,Index.class);
             startActivity(i);
         }
 
@@ -127,7 +127,7 @@ public class login extends ActionBarActivity implements View.OnClickListener {
                         progressDialog.dismiss();
                         if(task.isSuccessful()){
                             finish();
-                            Intent i = new Intent(login.this,home.class);
+                            Intent i = new Intent(login.this,Index.class);
                             startActivity(i);
                         }
                     }

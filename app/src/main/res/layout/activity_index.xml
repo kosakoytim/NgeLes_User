@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        >
+        <include layout="@layout/home_all_feature" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBar1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100"
+        android:gravity="center">
+        <!--<ProgressBar-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_centerHorizontal="true" />-->
+        <com.bhargavms.dotloader.DotLoader
+            android:id="@+id/text_dot_loader"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color_array="@array/dot_colors"
+            app:dot_radius="4dp"
+            app:number_of_dots="3"/>
+    </LinearLayout>
+    <include
+        layout="@layout/app_bar_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!-- Bottom Button -->
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.04"
+            android:background="@color/colorPrimaryDarker"
+            android:elevation="10dp"
+            android:weightSum="1"
+
+            >
+
+            <TextView
+                android:id="@+id/find_course"
+                android:onClick="find_course"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Find Course"
+                android:gravity="center"
+                android:textColor="@color/grey_100"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_weight="1.76"
+                android:background="@drawable/ripple_bordered_dark_teal"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--  -->
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/fragment_navigation_drawer"
+        app:menu="@menu/activity_index_drawer"
+        app:itemBackground="@color/colorPrimaryDarker"
+        app:itemTextColor="@color/grey_50"
+        app:itemIconTint="@color/grey_50"
+        android:background="@color/colorPrimaryDarker" />
+    <!--app:headerLayout="@layout/nav_header_index"-->
+
+
+
+</android.support.v4.widget.DrawerLayout>

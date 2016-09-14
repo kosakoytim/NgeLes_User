@@ -4,8 +4,6 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
     android:layout_marginTop="5dp"
     card_view:cardCornerRadius="0dp"
     android:focusable="true"
@@ -18,8 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -35,8 +33,20 @@
             android:layout_height="wrap_content"
             android:textSize="17sp"
             android:layout_gravity="center"
-            android:text="www.nge-les.com"
+            android:text="WEB PAGE"
             android:id="@+id/pp_contact_web_page" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginRight="15dp"
+            android:id="@+id/imageView16" />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

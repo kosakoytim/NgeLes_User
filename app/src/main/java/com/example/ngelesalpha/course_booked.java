@@ -66,7 +66,7 @@ public class course_booked extends ActionBarActivity implements View.OnClickList
         switch (v.getId())
         {
             case R.id.confirm_course:
-                Intent i = new Intent(course_booked.this,home.class);
+                Intent i = new Intent(course_booked.this,Index.class);
                 startActivity(i);
                 break;
         }

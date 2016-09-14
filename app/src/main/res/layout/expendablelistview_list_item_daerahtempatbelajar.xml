@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_daerahtempatbelajar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp">
+
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:text="Semua..."
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_daerahtempatbelajar_semua"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Jakarta Barat"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_jakartabarat"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Jakarta Timur"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_jakartatimur"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Jakarta Utara"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_jakartautara"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Jakarta Selatan"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_jakartaselatan"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Jakarta Pusat"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_jakartapusat"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Tangerang"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_tangerang"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bekasi"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_bekasi"
+            android:buttonTint="@color/accentYellow"
+            />
+
+    </RadioGroup>
+
+
+</LinearLayout>

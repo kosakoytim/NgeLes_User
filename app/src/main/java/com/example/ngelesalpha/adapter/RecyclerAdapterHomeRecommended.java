@@ -49,9 +49,9 @@ public class RecyclerAdapterHomeRecommended extends RecyclerView.Adapter<Recycle
         holder.class_shiftTxt.setText(s.getClass_shift());
         holder.id_colorTxt.setBackgroundColor(Color.parseColor(s.getId_color()));
         Uri uri = Uri.parse(s.getImageId());
-        Picasso.with(c).load(uri).fit().centerInside().placeholder(R.drawable.styleonline).into(holder.id_imageTxt);
+        Picasso.with(c).load(uri).fit().centerInside().into(holder.id_imageTxt);
         holder.address_state_nameTxt.setText(s.getAddress_state_name());
-
+        //placeholder(R.drawable.styleonline). (PICASSO)
 
         holder.setHome_recommendedClient_holder(new Home_recommended_itemclicklistener() {
             @Override

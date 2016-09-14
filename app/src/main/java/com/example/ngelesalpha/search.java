@@ -13,19 +13,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.ngelesalpha.adapter.ExpendableListAdapter;
 import com.example.ngelesalpha.adapter.RecyclerAdapterSearch;
 import com.example.ngelesalpha.firebase.SearchClient_firebase;
-import com.example.ngelesalpha.model.Search_model;
-import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
+import java.util.List;
 
 public class search extends ActionBarActivity {
 
@@ -38,6 +39,12 @@ public class search extends ActionBarActivity {
     RecyclerAdapterSearch adapterSearch;
     RecyclerView rv;
 
+
+
+    //Setup Loading Bar
+    private LinearLayout spinner;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +53,11 @@ public class search extends ActionBarActivity {
         toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Available Program");
+
+        //Setup Search Filter and Sort-------------------------------
+
+
+
 
         //compatibility by java
 		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
@@ -56,66 +68,73 @@ public class search extends ActionBarActivity {
 
         toolbar.inflateMenu(R.menu.main);
 
+        spinner = (LinearLayout) findViewById(R.id.progressBar_search);
+        spinner.setVisibility(View.VISIBLE);
+
+        setUpRecyclerView2();
+
+        floatingactionbutton();
+    }
 
 
-//        setUpRecyclerView();
-        //Initialize Recycler View
-        rv=(RecyclerView)findViewById(R.id.recyclerView);
-        LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
-        mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
-        rv.setLayoutManager(mLinearLayoutManagerVertical);
 
+    public void setUpRecyclerView2()
+    {
+        //---------------------------------------------
         //Initialize Firebase DB
         Intent intent= getIntent();
         String child=intent.getExtras().getString("CATEGORY_KEY");
         db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/"+ child);
         scb=new SearchClient_firebase(db);
+        adapterSearch = new RecyclerAdapterSearch(this,scb.retrieve());
+
+        db.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                spinner.setVisibility(View.GONE);
+                setUpRecyclerView();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    public void setUpRecyclerView()
+    {
+        //Initialize Recycler View
+        rv=(RecyclerView)findViewById(R.id.recyclerView);
+        LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
+        mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
 
         //Initialize Adapter
-        adapterSearch = new RecyclerAdapterSearch(this,scb.retrieve());
+        rv.setLayoutManager(mLinearLayoutManagerVertical);
         rv.setAdapter(adapterSearch);
         rv.setItemAnimator(new DefaultItemAnimator());
-
-
-        displayInputDialog();
-        floatingactionbutton();
     }
+
+
 
     private void floatingactionbutton()
     {
         FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab_search);
         fab.setOnClickListener((view)->
         {
-            displayInputDialog();
+            Intent i = new Intent(this,search_filtersort.class);
+            startActivity(i);
         });
     }
 
-//    private void setUpRecyclerView()
-//    {
-//        //Initialize Recycler View
-//        rv=(RecyclerView)findViewById(R.id.recyclerView);
-//        LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
-//        mLinearLayoutManagerVertical.setOrientation(LinearLayoutManager.VERTICAL);
-//        rv.setLayoutManager(mLinearLayoutManagerVertical);
-//
-//        //Initialize Firebase DB
-//        Intent intent= getIntent();
-//        String child=intent.getExtras().getString("CATEGORY_KEY");
-//        db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/"+ child);
-//        scb=new SearchClient_firebase(db);
-//
-//        //Initialize Adapter
-//        adapterSearch = new RecyclerAdapterSearch(this,scb.retrieve());
-//        rv.setAdapter(adapterSearch);
-//        rv.setItemAnimator(new DefaultItemAnimator());
-//    }
-
-
     //TESTING
     private void displayInputDialog(){
-//        Dialog d=new Dialog(this);
-//        d.setTitle("Save To Firebase");
-//        d.setContentView(R.layout.input_dialog);
+        Dialog d=new Dialog(this);
+        d.setTitle("Search");
+        d.setContentView(R.layout.search_filtersort);
+
+
+        //-----------------------------------------------------------
 //
 //        titleEditTxt=(EditText) d.findViewById(R.id.titleEditText);
 //        class_daysEditTxt=(EditText) d.findViewById(R.id.class_daysEditText);
@@ -172,7 +191,7 @@ public class search extends ActionBarActivity {
 //            }
 //
 //        });
-//        d.show();
+        d.show();
     }
 
     @Override

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/edit_profile_icon"
+            android:title="Edit My Profile"
+            />
+        <item
+            android:id="@+id/nav_my_schedule"
+            android:icon="@drawable/schedule"
+            android:title="My Schedule" />
+        <item
+            android:id="@+id/nav_my_assignment"
+            android:icon="@drawable/assignment"
+            android:title="My Assignment" />
+        <item
+            android:id="@+id/nav_active_class"
+            android:icon="@drawable/class_active_icon"
+            android:title="Active Class" />
+        <item
+            android:id="@+id/nav_class_history"
+            android:icon="@drawable/class_history_icon"
+            android:title="Class History" />
+    <!--</group>-->
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <item
+                android:id="@+id/nav_class_status"
+                android:icon="@drawable/class_status_icon"
+                android:title="Class Status" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings_icon"
+                android:title="Settings" />
+    <item
+        android:id="@+id/nav_help_and_support"
+        android:icon="@drawable/customer_support_icon"
+        android:title="Help and Support" />
+    <item
+        android:id="@+id/nav_join_us"
+        android:icon="@drawable/post_a_course_program_icon"
+        android:title="Join as Service Partner" />
+    <item
+        android:id="@+id/nav_log_out"
+        android:icon="@drawable/log_out_icon"
+        android:title="Log Out" />
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

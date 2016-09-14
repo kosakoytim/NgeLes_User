@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_lamajambelajar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp">
+
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:text="Semua..."
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_lamajambelajar_semua"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Kurang dari 30 menit"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_kurangdari30menit"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="1 Jam"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_1jam"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="2 Jam"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_2jam"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="3 Jam"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_3jam"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="4 Jam"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_4jam"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Lebih dari 4 jam"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_lebihdari4jam"
+            android:buttonTint="@color/accentYellow"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

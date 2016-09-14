@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_lamaperiodebelajar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp">
+
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:text="Semua..."
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_lamaperiodebelajar_semua"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="1x Pertemuan"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_1xpertemuan"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="1-4 Minggu"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_1_4minggu"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="1-2 Bulan"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_1_2bulan"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="2-4 Bulan"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_2_4bulan"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="4-6 Bulan"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_4_6bulan"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="6-12 Bulan"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_6_12bulan"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="1-2 Tahun"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_1_2tahun"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="2-3 Tahun"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_2_3tahun"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Lebih dari 3 Tahun"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_lebihdari3tahun"
+            android:buttonTint="@color/accentYellow"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,4 +1,3 @@
-package com.example.ngelesalpha;
 
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
@@ -7,6 +6,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.example.ngelesalpha.R;
 
 public class help_and_support extends ActionBarActivity {
 

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_kelastingkat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp">
+
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:text="Semua..."
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_kelastingkat_semua"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="TK/PAUD"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_tk_paud"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SD Kelas I"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sd_kelas_i"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SD Kelas II"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sd_kelas_ii"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SD Kelas III"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sd_kelas_iii"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SD Kelas IV"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sd_kelas_iv"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SD Kelas V"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sd_kelas_v"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SD Kelas VI"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sd_kelas_vi"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SMP Kelas VII"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_smp_kelas_vii"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SMP Kelas VIII"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_smp_kelas_viii"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SMP Kelas IX"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_smp_kelas_ix"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SMA Kelas X"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sma_kelas_x"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SMA Kelas XI"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sma_kelas_xi"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SMA Kelas XII"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_sma_kelas_xii"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Mahasiswa"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_mahasiswa"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bekerja (17-25)"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_bekerja1725"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bekerja (26-30)"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_bekerja2630"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bekerja (31-40)"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_bekerja3140"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bekerja (41-50)"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_bekerja4150"
+            android:buttonTint="@color/accentYellow"
+            />
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bekerja (51++)"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:id="@+id/rb_bekerja51"
+            android:buttonTint="@color/accentYellow"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -2,7 +2,9 @@ package com.example.ngelesalpha;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
@@ -16,6 +18,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.ngelesalpha.adapter.PagerAdapterProgramProfile;
@@ -32,9 +35,11 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import org.w3c.dom.Text;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -114,6 +119,9 @@ public class program_profile extends AppCompatActivity {
 
         addData(fragment_pp_contact, "Contact");
 
+        //initialize get data of other program here
+        addData(fragment_pp_contact, "Other Programs");
+
 //        //Get Intent
 //        Intent i=this.getIntent();
 //        //Receive Data
@@ -171,6 +179,7 @@ public class program_profile extends AppCompatActivity {
         //---get background_image
         ImageView pp_header_bg = (ImageView) findViewById(R.id.pp_header_bg);
         Picasso.with(getApplicationContext()).load(background_image).fit().centerInside().into(pp_header_bg);
+        //
 
         //---get idcolor1
         if (Build.VERSION.SDK_INT >= 21) {
@@ -251,23 +260,6 @@ public class program_profile extends AppCompatActivity {
         }
     }
 
-
-//    private void prepareDataResource(){
-//        Bundle bundle_pp_information = new Bundle();
-//        bundle_pp_information.putString("KEY_NAME", "Abrakadabra");
-//        ProgramProfileInformation_fragment fragment_pp_information = new ProgramProfileInformation_fragment();
-//        fragment_pp_information.setArguments(bundle_pp_information);
-//
-//        addData(fragment_pp_information, "Information");
-//
-//        Bundle bundle_pp_contact = new Bundle();
-//        bundle_pp_contact.putString("KEY_NAME", title);
-//        ProgramProfileInformation_fragment fragment_pp_contact = new ProgramProfileInformation_fragment();
-//        fragment_pp_contact.setArguments(bundle_pp_contact);
-//
-//        addData(fragment_pp_contact, "Contact");
-//        addData(new ProgramProfileTestimonial_fragment(), "Testimonial");
-//}
 
     private void addData(Fragment fragment,String title){
         

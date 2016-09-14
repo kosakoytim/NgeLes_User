@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.ngelesalpha.R;
-import com.example.ngelesalpha.home;
 import com.example.ngelesalpha.learning_method;
 import com.example.ngelesalpha.model.NavigationDrawerItem_model;
 
