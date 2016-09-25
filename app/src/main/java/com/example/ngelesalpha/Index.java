@@ -1,14 +1,18 @@
 package com.example.ngelesalpha;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Fade;
+import android.transition.TransitionInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -25,6 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.ngelesalpha.adapter.RecyclerAdapterHomePopular;
 import com.example.ngelesalpha.adapter.RecyclerAdapterHomeRecommended;
@@ -45,12 +50,10 @@ public class Index extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener {
 
     private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
     private TextView find_course;
     private LinearLayout edit_profile;
 
-    //Temporary Here
-    private Button btnLogout;
-    private Button btnEditProfile;
 
     //Setup Toolbar
     Toolbar toolbar;
@@ -63,7 +66,6 @@ public class Index extends AppCompatActivity
     RecyclerAdapterHomePopular adapterHomePopular;
     RecyclerView rv_hr,rv_hp;
 
-//    private ProgressBar spinner;
     private LinearLayout spinner;
 
     @Override
@@ -80,8 +82,26 @@ public class Index extends AppCompatActivity
             finish();
             startActivity(new Intent(this, login.class));
         }
-        FirebaseUser user= firebaseAuth.getCurrentUser();
+//        FirebaseUser user= firebaseAuth.getCurrentUser();
 
+        // [START auth_state_listener]
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    // User is signed in
+                    setUpUserProfileImage();
+                    setUpUserName();
+
+                } else {
+                    // User is signed out
+
+                }
+            }
+        };
+
+        // [END auth_state_listener]
         //Setup Profile
         setUpUserProfileImage();
         setUpUserName();
@@ -89,14 +109,6 @@ public class Index extends AppCompatActivity
         //Setup Find Course
         find_course=(TextView)findViewById(R.id.find_course);
         find_course.setOnClickListener(this);
-
-//        //Setup Edit Profile
-//        edit_profile=(LinearLayout)findViewById(R.id.edit_profile);
-//        edit_profile.setOnClickListener(this);
-
-//        //temp
-//        btnEditProfile=(Button)findViewById(R.id.btn_editprofile);
-//        btnEditProfile.setOnClickListener(this);
 
         setUpToolbar();
 
@@ -230,19 +242,19 @@ public class Index extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_my_schedule) {
-            Intent i = new Intent(this,my_schedule.class);
-            startActivity(i);
-        } else if (id == R.id.nav_my_assignment) {
-            Intent i = new Intent(this,assignment.class);
-            startActivity(i);
-        } else if (id == R.id.nav_active_class) {
-            Intent i = new Intent(this,active_class.class);
-            startActivity(i);
-        } else if (id == R.id.nav_class_history) {
-            Intent i = new Intent(this,history.class);
-            startActivity(i);
-        } else if (id == R.id.nav_class_status) {
+//        if (id == R.id.nav_my_schedule) {
+//            Intent i = new Intent(this,my_schedule.class);
+//            startActivity(i);
+//        } else if (id == R.id.nav_my_assignment) {
+//            Intent i = new Intent(this,assignment.class);
+//            startActivity(i);
+//        } else if (id == R.id.nav_active_class) {
+//            Intent i = new Intent(this,active_class.class);
+//            startActivity(i);
+//        } else if (id == R.id.nav_class_history) {
+//            Intent i = new Intent(this,history.class);
+//            startActivity(i);
+        if (id == R.id.nav_class_status) {
             Intent i = new Intent(this,waiting_confirmation.class);
             startActivity(i);
         } else if (id == R.id.nav_settings) {
@@ -262,11 +274,6 @@ public class Index extends AppCompatActivity
             startActivity(intent);
         } else if(id==R.id.nav_log_out) {
             firebaseAuth.signOut();
-
-//			// We can logout from facebook by calling following method
-//			PrefUtils.clearCurrentUser(home.this);
-//			LoginManager.getInstance().logOut();
-
             finish();
             Intent i = new Intent(this,login.class);
             startActivity(i);
@@ -284,50 +291,63 @@ public class Index extends AppCompatActivity
     {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         String uid = user.getUid();
-        DatabaseReference getUp_image = FirebaseDatabase.getInstance()
-                .getReferenceFromUrl("https://ngeles-user.firebaseio.com/user");
-        getUp_image.child(uid).child("up_image").addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String text=dataSnapshot.getValue(String.class);
-                Transformation transformation = new RoundedTransformationBuilder()
-                        .borderColor(Color.BLACK)
-                        .borderWidthDp(1)
-                        .cornerRadiusDp(100)
-                        //previously 30
-                        .oval(false)
-                        .build();
+            DatabaseReference getUp_image = FirebaseDatabase.getInstance()
+                    .getReferenceFromUrl("https://ngeles-user.firebaseio.com/user");
+            getUp_image.child(uid).child("up_image").addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    String text=dataSnapshot.getValue(String.class);
+                    Transformation transformation = new RoundedTransformationBuilder()
+                            .borderColor(Color.BLACK)
+                            .borderWidthDp(1)
+                            .cornerRadiusDp(100)
+                            //previously 30
+                            .oval(false)
+                            .build();
 
-                ImageView home_up_image = (ImageView) findViewById(R.id.up_image);
-                Picasso.with(getApplicationContext()).load(text).fit().centerInside().transform(transformation).into(home_up_image);
-            }
+                    ImageView home_up_image = (ImageView) findViewById(R.id.up_image);
+                    Picasso.with(getApplicationContext()).load(text).fit().centerInside().transform(transformation).into(home_up_image);
+                }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
 
-            }
-        });
+                }
+            });
+//        }
+
     }
 
     private void setUpUserName()
     {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         String uid = user.getUid();
-        DatabaseReference getUp_name = FirebaseDatabase.getInstance()
-                .getReferenceFromUrl("https://ngeles-user.firebaseio.com/user");
-        getUp_name.child(uid).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String text=dataSnapshot.getValue(String.class);
-                TextView home_up_name = (TextView)findViewById(R.id.up_name);
-                home_up_name.setText(text);
-            }
+//        if(login_by.equals("Facebook"))
+//        {
+//            String display_name = user.getDisplayName();
+//            TextView home_up_name = (TextView)findViewById(R.id.up_name);
+//            home_up_name.setText(display_name);
+//            Toast.makeText(Index.this, "Logged By Facebook", Toast.LENGTH_SHORT).show();
+//        }
+//        else if(login_by.equals("Email"))
+//        {
+            DatabaseReference getUp_name = FirebaseDatabase.getInstance()
+                    .getReferenceFromUrl("https://ngeles-user.firebaseio.com/user");
+            getUp_name.child(uid).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    String text=dataSnapshot.getValue(String.class);
+                    TextView home_up_name = (TextView)findViewById(R.id.up_name);
+                    home_up_name.setText(text);
+//                    Toast.makeText(Index.this, "Logged By Email", Toast.LENGTH_SHORT).show();
+                }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
 
-            }
-        });
+                }
+            });
+//        }
     }
 
     private void setUpToolbar()

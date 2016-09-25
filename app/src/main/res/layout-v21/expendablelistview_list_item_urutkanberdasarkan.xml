@@ -11,7 +11,7 @@
         android:layout_marginLeft="17dp">
 
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_sort_urutkanberdasarkan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:checked="true"
@@ -22,7 +22,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_sort_urutkanberdasarkan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Termurah"
@@ -32,7 +32,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_sort_urutkanberdasarkan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Terdekat"
@@ -42,7 +42,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_sort_urutkanberdasarkan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Terpopuler"

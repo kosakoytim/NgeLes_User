@@ -1,5 +1,6 @@
 package com.example.ngelesalpha.adapter;
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -193,6 +194,11 @@ public class RecyclerAdapterHomeRecommended extends RecyclerView.Adapter<Recycle
 //        i.putExtra("CONTACT_FACEBOOK_KEY",details[26]);
 //        i.putExtra("CONTACT_PHONE_KEY",details[27]);
 //        i.putExtra("CONTACT_WEB_PAGE_KEY",details[28]);
+//        View sharedView = blueIconImageView;
+//        String transitionName = getString(R.string.blue_name);
+//
+//        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(c, sharedView, transitionName);
+//        c.startActivity(i, transitionActivityOptions.toBundle());
         c.startActivity(i);
     }
 

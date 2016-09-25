@@ -7,22 +7,22 @@
             android:icon="@drawable/edit_profile_icon"
             android:title="Edit My Profile"
             />
-        <item
-            android:id="@+id/nav_my_schedule"
-            android:icon="@drawable/schedule"
-            android:title="My Schedule" />
-        <item
-            android:id="@+id/nav_my_assignment"
-            android:icon="@drawable/assignment"
-            android:title="My Assignment" />
-        <item
-            android:id="@+id/nav_active_class"
-            android:icon="@drawable/class_active_icon"
-            android:title="Active Class" />
-        <item
-            android:id="@+id/nav_class_history"
-            android:icon="@drawable/class_history_icon"
-            android:title="Class History" />
+        <!--<item-->
+            <!--android:id="@+id/nav_my_schedule"-->
+            <!--android:icon="@drawable/schedule"-->
+            <!--android:title="My Schedule" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_my_assignment"-->
+            <!--android:icon="@drawable/assignment"-->
+            <!--android:title="My Assignment" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_active_class"-->
+            <!--android:icon="@drawable/class_active_icon"-->
+            <!--android:title="Active Class" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_class_history"-->
+            <!--android:icon="@drawable/class_history_icon"-->
+            <!--android:title="Class History" />-->
     <!--</group>-->
 
     <!--<item android:title="Communicate">-->
@@ -30,7 +30,7 @@
             <item
                 android:id="@+id/nav_class_status"
                 android:icon="@drawable/class_status_icon"
-                android:title="Class Status" />
+                android:title="Booked Course Program" />
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/settings_icon"

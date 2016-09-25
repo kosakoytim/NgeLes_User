@@ -31,9 +31,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="Jl. Ruby X 14, Kecamatan Jatiasih, Bekasi"
                 android:id="@+id/pp_address" />
         </LinearLayout>
+
+        <!--<fragment -->
+            <!--android:id="@+id/map"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp"-->
+            <!--class="com.google.android.gms.maps.SupportMapFragment" />-->
 
     </LinearLayout>
 

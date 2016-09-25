@@ -11,7 +11,7 @@
         android:layout_marginLeft="17dp">
 
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:checked="true"
@@ -22,7 +22,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Jakarta Barat"
@@ -32,7 +32,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Jakarta Timur"
@@ -42,7 +42,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Jakarta Utara"
@@ -52,7 +52,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Jakarta Selatan"
@@ -62,7 +62,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Jakarta Pusat"
@@ -72,7 +72,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Tangerang"
@@ -82,7 +82,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_daerahtempatbelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Bekasi"

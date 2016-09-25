@@ -9,8 +9,14 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.facebook.AccessToken;
 import com.facebook.FacebookSdk;
+import com.facebook.login.LoginResult;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.EmailAuthProvider;
+import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.GoogleAuthProvider;
 
 /**
  * Created by Timothy on 7/1/2016.
@@ -20,6 +26,8 @@ public class splash_screen extends ActionBarActivity {
     private FirebaseAuth firebaseAuth;
     /** Duration of wait **/
     private final int SPLASH_DISPLAY_LENGTH = 1000;
+    LoginResult loginResult;
+//    AccessToken token;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,12 +58,25 @@ public class splash_screen extends ActionBarActivity {
                 if(firebaseAuth.getCurrentUser()!=null){
                     finish();
                     Intent i = new Intent(splash_screen.this,Index.class);
+
+//                    AuthCredential fb_credential = FacebookAuthProvider.getCredential(token.getToken());
+//                    if((loginResult.getAccessToken())!=null)
+//                    {
+//                        i.putExtra("LOGIN_BY","Facebook");
+//                    }
+//                    else
+//                    {
+//                        i.putExtra("LOGIN_BY","Email");
+//                    }
                     startActivity(i);
+//                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
                 else
                 {
+                    finish();
                     Intent i = new Intent(splash_screen.this,login.class);
                     startActivity(i);
+//                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
             }
         }, SPLASH_DISPLAY_LENGTH);

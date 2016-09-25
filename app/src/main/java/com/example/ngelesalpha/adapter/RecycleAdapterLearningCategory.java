@@ -75,6 +75,8 @@ public class RecycleAdapterLearningCategory extends RecyclerView.Adapter<Recycle
                 String child = "software_development";
                 a.putExtra("CATEGORY_KEY",child);
             }
+            String get_intent_from = "from_learning_category";
+            a.putExtra("GET_INTENT_FROM",get_intent_from);
             context.startActivity(a);
         });
     }

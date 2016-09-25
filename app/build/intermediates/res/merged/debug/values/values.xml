@@ -464,6 +464,7 @@
     <string name="drawer_open">Open</string>
     <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at convallis quam, non vestibulum urna. Nunc ullamcorper porttitor augue, id tincidunt metus placerat at. Integer scelerisque aliquam accumsan. Aliquam pulvinar vel felis et viverra. Etiam in velit est. Aliquam erat volutpat. Suspendisse quis velit sed eros malesuada egestas in at dolor. Pellentesque placerat turpis sit amet justo aliquam egestas. Suspendisse ut posuere enim, a dictum lectus.</string>
     <string name="facebook_app_id">382246335279028</string>
+    <string name="facebook_status_fmt">s</string>
     <string name="fb_login_protocol_scheme">fb382246335279028</string>
     <string name="firebase_database_url" translatable="false">https://ngeles-user.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">661652328985</string>
@@ -1588,6 +1589,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@color/windowBackground</item>
+
     </style>
     <style name="ParentMaterialThemePP" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/id_color</item>

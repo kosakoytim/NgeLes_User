@@ -11,7 +11,7 @@
         android:layout_marginLeft="17dp">
 
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:checked="true"
@@ -22,7 +22,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Kurang dari IDR 100,000"
@@ -32,7 +32,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="IDR 100,000-500,000"
@@ -42,7 +42,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="IDR 500,000-1,000,000"
@@ -52,7 +52,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="IDR 1,000,000-2,000,000"
@@ -62,7 +62,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="IDR 2,000,000-3,000,000"
@@ -72,7 +72,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="IDR 3,000,000-5,000,000"
@@ -82,7 +82,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_hargaperbulan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Lebih dari IDR 5,000,000"

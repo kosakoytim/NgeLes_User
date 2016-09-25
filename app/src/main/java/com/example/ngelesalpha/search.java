@@ -10,11 +10,13 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.ngelesalpha.adapter.ExpendableListAdapter;
 import com.example.ngelesalpha.adapter.RecyclerAdapterSearch;
@@ -23,6 +25,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
@@ -39,10 +42,14 @@ public class search extends ActionBarActivity {
     RecyclerAdapterSearch adapterSearch;
     RecyclerView rv;
 
-
-
     //Setup Loading Bar
     private LinearLayout spinner;
+
+    Query query_db;
+
+    //Setup Get from Sort Filter
+//    String sort_urutkanberdasarkan="recommended";
+//    String filter_kelastingkat="semua";
 
 
     @Override
@@ -53,10 +60,6 @@ public class search extends ActionBarActivity {
         toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Available Program");
-
-        //Setup Search Filter and Sort-------------------------------
-
-
 
 
         //compatibility by java
@@ -76,23 +79,47 @@ public class search extends ActionBarActivity {
         floatingactionbutton();
     }
 
-
-
     public void setUpRecyclerView2()
     {
-        //---------------------------------------------
-        //Initialize Firebase DB
+        //Setup filter
+        String filter_lamajambelajar="semua";
+        String filter_lamaperiodebelajar="semua";
+        String filter_hargaperbulan="semua";
+        String filter_daerahtempatbelajar="semua";
+
+        Log.d("class SEARCH " ,""+filter_lamajambelajar+"---"+filter_lamaperiodebelajar+"---"+filter_hargaperbulan+"---"+filter_daerahtempatbelajar);
+
+        //Get Intent Data
         Intent intent= getIntent();
-        String child=intent.getExtras().getString("CATEGORY_KEY");
-        db= FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/"+ child);
-        scb=new SearchClient_firebase(db);
+        String learning_category=intent.getExtras().getString("CATEGORY_KEY");
+        String get_intent_from=intent.getExtras().getString("GET_INTENT_FROM");
+        db = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ngeles-user.firebaseio.com/programprofile/group_class/"+ learning_category);
+        query_db=db;
+
+        //Intent from Sort and filter
+//        sort_urutkanberdasarkan= intent.getExtras().getString("SORT_URUTKANBERDASARKAN_KEY");
+//        filter_kelastingkat= intent.getExtras().getString("FILTER_KELASTINGKAT_KEY");
+
+        if(get_intent_from.equals("from_sort_and_filter"))
+        {
+            Log.d("class SEARCH " ,""+get_intent_from);
+            filter_lamajambelajar= intent.getExtras().getString("FILTER_LAMAJAMBELAJAR_KEY");
+            filter_lamaperiodebelajar= intent.getExtras().getString("FILTER_LAMAPERIODEBELAJAR_KEY");
+            filter_hargaperbulan= intent.getExtras().getString("FILTER_HARGAPERBULAN_KEY");
+            filter_daerahtempatbelajar= intent.getExtras().getString("FILTER_DAERAHTEMPATBELAJAR_KEY");
+            Log.d("class SEARCH " ,"get intent success --- "+filter_lamajambelajar+"---"+filter_lamaperiodebelajar+"---"+filter_hargaperbulan+"---"+filter_daerahtempatbelajar);
+        }
+
+        scb=new SearchClient_firebase(query_db,learning_category,filter_lamajambelajar,filter_lamaperiodebelajar,filter_hargaperbulan,filter_daerahtempatbelajar);
+
         adapterSearch = new RecyclerAdapterSearch(this,scb.retrieve());
 
-        db.addListenerForSingleValueEvent(new ValueEventListener() {
+        query_db.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 spinner.setVisibility(View.GONE);
                 setUpRecyclerView();
+                Log.d("class SEARCH " ,""+"finished loading");
             }
 
             @Override
@@ -102,8 +129,10 @@ public class search extends ActionBarActivity {
         });
     }
 
+
     public void setUpRecyclerView()
     {
+        Log.d("class SEARCH " ,""+"set up recycler view");
         //Initialize Recycler View
         rv=(RecyclerView)findViewById(R.id.recyclerView);
         LinearLayoutManager mLinearLayoutManagerVertical = new LinearLayoutManager(this);
@@ -119,10 +148,17 @@ public class search extends ActionBarActivity {
 
     private void floatingactionbutton()
     {
+        //---------------------------------------------
+        //Initialize Firebase DB
+        Intent intent= getIntent();
+        String child=intent.getExtras().getString("CATEGORY_KEY");
+
         FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab_search);
         fab.setOnClickListener((view)->
         {
+            String pass_category_to_sortfilter=child;
             Intent i = new Intent(this,search_filtersort.class);
+            i.putExtra("CATEGORY_KEY", pass_category_to_sortfilter);
             startActivity(i);
         });
     }
@@ -132,65 +168,6 @@ public class search extends ActionBarActivity {
         Dialog d=new Dialog(this);
         d.setTitle("Search");
         d.setContentView(R.layout.search_filtersort);
-
-
-        //-----------------------------------------------------------
-//
-//        titleEditTxt=(EditText) d.findViewById(R.id.titleEditText);
-//        class_daysEditTxt=(EditText) d.findViewById(R.id.class_daysEditText);
-//        class_shiftEditTxt=(EditText) d.findViewById(R.id.class_shiftEditText);
-//        class_chargeTxt=(EditText) d.findViewById(R.id.class_chargeEditText);
-//        id_moneyTxt=(EditText) d.findViewById(R.id.id_moneyEditText);
-//        charge_per_blankTxt=(EditText) d.findViewById(R.id.charge_per_blankEditText);
-//        EditText id_imageTxt=(EditText) d.findViewById(R.id.titleEditText);
-//        id_colorTxt=(EditText) d.findViewById(R.id.id_colorEditText);
-//        Button saveBtn = (Button) d.findViewById(R.id.saveBtn);
-
-        //Save
-//        saveBtn.setOnClickListener((v)-> {
-            //Get Data
-//            String title=titleEditTxt.getText().toString();
-//            String class_days=class_daysEditTxt.getText().toString();
-//            String class_shift=class_shiftEditTxt.getText().toString();
-//            String class_charge=class_chargeTxt.getText().toString();
-//            String id_money=id_moneyTxt.getText().toString();
-//            String charge_per_blank=charge_per_blankTxt.getText().toString();
-//            String id_image=id_imageTxt.getText().toString();
-//            String id_color=id_colorTxt.getText().toString();
-
-            //Set Data
-//            Search_model s=new Search_model();
-//            s.setTitle(title);
-//            s.setClass_days(class_days);
-//            s.setClass_shift(class_shift);
-//            s.setClass_charge(class_charge);
-//            s.setId_money(id_money);
-//            s.setCharge_per_blank(charge_per_blank);
-//            s.setImageId(id_image);
-//            s.setId_color(id_color);
-
-//            if(title!=null && title.length()>0)
-//            {
-//                if(scb.save(s))
-//                {
-//                    titleEditTxt.setText("");
-//                    class_daysEditTxt.setText("");
-//                    class_shiftEditTxt.setText("");
-//                    class_chargeTxt.setText("");
-//                    id_moneyTxt.setText("");
-//                    charge_per_blankTxt.setText("");
-//                    id_colorTxt.setText("");
-//
-//                    adapterSearch = new RecyclerAdapterSearch(search.this,scb.retrieve());
-//                    rv.setAdapter(adapterSearch);
-//                }
-//            }
-//            else
-//            {
-//                Toast.makeText(search.this, "Title must not be empty", Toast.LENGTH_SHORT).show();
-//            }
-//
-//        });
         d.show();
     }
 

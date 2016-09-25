@@ -11,7 +11,7 @@
         android:layout_marginLeft="17dp">
 
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:checked="true"
@@ -22,7 +22,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="1x Pertemuan"
@@ -32,7 +32,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="1-4 Minggu"
@@ -42,7 +42,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="1-2 Bulan"
@@ -52,7 +52,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="2-4 Bulan"
@@ -62,7 +62,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="4-6 Bulan"
@@ -72,7 +72,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="6-12 Bulan"
@@ -82,7 +82,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="1-2 Tahun"
@@ -92,7 +92,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="2-3 Tahun"
@@ -102,7 +102,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamaperiodebelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Lebih dari 3 Tahun"

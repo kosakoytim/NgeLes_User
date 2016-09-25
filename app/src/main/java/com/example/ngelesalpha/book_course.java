@@ -1,11 +1,15 @@
 package com.example.ngelesalpha;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Build;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,6 +35,8 @@ public class book_course extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.book_course);
 
+        Intent intent= getIntent();
+        String id_color2=intent.getExtras().getString("ID_COLOR2_KEY");
 //        toolbar=(Toolbar)findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 //
@@ -58,14 +64,62 @@ public class book_course extends ActionBarActivity {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(getResources().getColor(R.color.id_color2));
+            window.setStatusBarColor(Color.parseColor(id_color2));
         }
+        CoordinatorLayout bg_color = (CoordinatorLayout) findViewById(R.id.main_content);
+        bg_color.setBackgroundColor(Color.parseColor(id_color2));
     }
 
     public void validate_book_course(View v){
 
         if(validate_name()&&validate_phone()&&validate_email())
         {
+//            Mail m = new Mail("kosakoytim@gmail.com", "timtim31");
+//
+//            String[] toArr = {"ngelesofficial@gmail.com"};
+//            m.setTo(toArr);
+//            m.setFrom("kosakoytim@gmail.com");
+//            m.setSubject("This is an email sent using my Mail JavaMail wrapper from an Android device.");
+//            m.setBody("Email body.");
+//
+//            try {
+////                m.addAttachment("/sdcard/filelocation");
+//                new AsyncTask<Void, Void, Void>() {
+//
+//                    @Override
+//                    protected void onPreExecute()
+//                    {
+//                        Log.d("Mail Test", "onPreExecute()");
+//                    }
+//
+//                    @Override
+//                    protected Void doInBackground(Void... params)
+//                    {
+//                        Log.d("Mail Test", "doInBackground() -- Here is the download");
+//                        Toast.makeText(book_course.this, "Email was sent successfully.", Toast.LENGTH_LONG).show();
+//                        Log.d("MailApp", "Email Sent Success");
+//                        return null;
+//                    }
+//
+//                    @Override
+//                    protected void onPostExecute(Void res)
+//                    {
+//                        Log.d("Mail Test", "onPostExecute()");
+//                    }
+//                }.execute();
+//
+////                if(m.send()) {
+////
+////
+////                } else {
+////                    Toast.makeText(book_course.this, "Email was not sent.", Toast.LENGTH_LONG).show();
+////                }
+//            } catch(Exception e) {
+//                //Toast.makeText(MailApp.this, "There was a problem sending the email.", Toast.LENGTH_LONG).show();
+//                Log.e("MailApp", "Could not send email", e);
+//            }
+
+
             Intent i = new Intent(book_course.this,payment_method.class);
             startActivity(i);
         }

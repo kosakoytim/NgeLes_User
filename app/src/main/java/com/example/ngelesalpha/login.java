@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.camera2.params.Face;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -37,10 +38,17 @@ import com.facebook.ProfileTracker;
 import com.facebook.login.LoginManager;
 //import com.facebook.login.LoginResult;
 //import com.facebook.login.widget.LoginButton;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -58,36 +66,69 @@ public class login extends ActionBarActivity implements View.OnClickListener {
     private TextView log_in,belum_sign_up;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
-
-//    private LoginButton loginButton;
-
-//    private CallbackManager callbackManager;
-//    private TextView btnLogin;
-//    User user;
-
+    private static final String TAG = "FacebookLogin";
+    private CallbackManager mCallbackManager;
+    private FirebaseAuth.AuthStateListener mAuthListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.login);
 
-//        //Initialize Facebook Login
-//        if(PrefUtils.getCurrentUser(login.this) != null){
-//
-//            Intent homeIntent = new Intent(login.this, home.class);
-//
-//            startActivity(homeIntent);
-//
-//            finish();
-//        }
 
         //Initialize Firebase Authentication
         firebaseAuth=FirebaseAuth.getInstance();
-        if(firebaseAuth.getCurrentUser()!=null){
-            finish();
-            Intent i = new Intent(login.this,Index.class);
-            startActivity(i);
-        }
+//        if(firebaseAuth.getCurrentUser()!=null){
+//            finish();
+//            Intent i = new Intent(login.this,Index.class);
+//            startActivity(i);
+//        }
+
+        // [START auth_state_listener]
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    // User is signed in
+                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+
+                } else {
+                    // User is signed out
+                    Log.d(TAG, "onAuthStateChanged:signed_out");
+                }
+                // [START_EXCLUDE]
+//                updateUI(user);
+
+                // [END_EXCLUDE]
+            }
+        };
+        // [END auth_state_listener]
+
+        // Initialize Facebook Login button
+        mCallbackManager = CallbackManager.Factory.create();
+        LoginButton loginButton = (LoginButton) findViewById(R.id.button_facebook_login);
+        loginButton.setReadPermissions("email", "public_profile");
+        loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Log.d(TAG, "facebook:onSuccess:" + loginResult);
+                handleFacebookAccessToken(loginResult.getAccessToken());
+            }
+
+            @Override
+            public void onCancel() {
+                Log.d(TAG, "facebook:onCancel");
+                // ...
+            }
+
+            @Override
+            public void onError(FacebookException error) {
+                Log.d(TAG, "facebook:onError", error);
+                // ...
+            }
+        });
 
         //Loading Login Process
         progressDialog=new ProgressDialog(this);
@@ -103,7 +144,28 @@ public class login extends ActionBarActivity implements View.OnClickListener {
         belum_sign_up.setOnClickListener(this);
     }
 
+    // [START on_start_add_listener]
+    @Override
+    public void onStart() {
+        super.onStart();
+        firebaseAuth.addAuthStateListener(mAuthListener);
+    }
+    // [END on_start_add_listener]
 
+    // [START on_stop_remove_listener]
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mAuthListener != null) {
+            firebaseAuth.removeAuthStateListener(mAuthListener);
+        }
+    }
+    // [END on_stop_remove_listener]
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        mCallbackManager.onActivityResult(requestCode, resultCode, data);
+    }
 
     private void log_in(){
         String email=et_email.getText().toString().trim();
@@ -133,6 +195,56 @@ public class login extends ActionBarActivity implements View.OnClickListener {
                     }
                 });
     }
+
+    private void handleFacebookAccessToken(AccessToken token) {
+        Log.d(TAG, "handleFacebookAccessToken:" + token);
+
+        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+        firebaseAuth.signInWithCredential(credential)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Log.d(TAG, "signInWithCredential:onComplete:" + task.isSuccessful());
+                            //Get Data Profile Name and Picture
+                            firebaseAuth = FirebaseAuth.getInstance();
+                            FirebaseUser user = firebaseAuth.getCurrentUser();
+                            DatabaseReference pp_database = FirebaseDatabase.getInstance()
+                                    .getReferenceFromUrl("https://ngeles-user.firebaseio.com/user");
+                            String uid = user.getUid();
+                            Uri uri=user.getPhotoUrl();
+                            String string_photourl;
+                            string_photourl = uri.toString();
+                            pp_database.child(uid).child("name").setValue(user.getDisplayName());
+                            pp_database.child(uid).child("email").setValue(user.getEmail());
+                            pp_database.child(uid).child("phone_number").setValue("");
+                            pp_database.child(uid).child("up_image").setValue(string_photourl);
+
+                            finish();
+                            Intent i = new Intent(login.this,Index.class);
+                            startActivity(i);
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        if (!task.isSuccessful()) {
+                            Log.w(TAG, "signInWithCredential", task.getException());
+                            Toast.makeText(login.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+
+                        // ...
+
+                    }
+                });
+    }
+
+//    private void updateUI(FirebaseUser user) {
+//        if (user != null) {
+//            mStatusTextView.setText(getString(R.string.facebook_status_fmt, user.getDisplayName()));
+//            mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
+//
+//            findViewById(R.id.button_facebook_login).setVisibility(View.GONE);
+//        }
+//    }
 
     @Override
     public void onClick(View view) {

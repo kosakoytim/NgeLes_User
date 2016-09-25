@@ -11,7 +11,7 @@
         android:layout_marginLeft="17dp">
 
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:checked="true"
@@ -22,7 +22,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="TK/PAUD"
@@ -32,7 +32,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SD Kelas I"
@@ -42,7 +42,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SD Kelas II"
@@ -52,7 +52,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SD Kelas III"
@@ -62,7 +62,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SD Kelas IV"
@@ -72,7 +72,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SD Kelas V"
@@ -82,7 +82,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SD Kelas VI"
@@ -92,7 +92,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SMP Kelas VII"
@@ -102,7 +102,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SMP Kelas VIII"
@@ -112,7 +112,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SMP Kelas IX"
@@ -122,7 +122,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SMA Kelas X"
@@ -132,7 +132,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SMA Kelas XI"
@@ -142,7 +142,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SMA Kelas XII"
@@ -152,7 +152,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Mahasiswa"
@@ -162,7 +162,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Bekerja (17-25)"
@@ -172,7 +172,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Bekerja (26-30)"
@@ -182,7 +182,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Bekerja (31-40)"
@@ -192,7 +192,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Bekerja (41-50)"
@@ -202,7 +202,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_kelastingkat"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Bekerja (51++)"

@@ -11,7 +11,7 @@
         android:layout_marginLeft="17dp">
 
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamajambelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:checked="true"
@@ -22,7 +22,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamajambelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Kurang dari 30 menit"
@@ -32,7 +32,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamajambelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="1 Jam"
@@ -42,7 +42,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamajambelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="2 Jam"
@@ -52,7 +52,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamajambelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="3 Jam"
@@ -62,7 +62,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamajambelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="4 Jam"
@@ -72,7 +72,7 @@
             android:buttonTint="@color/accentYellow"
             />
         <RadioButton
-            android:onClick="onRadioButtonClicked"
+            android:onClick="onRadioButtonClicked_filter_lamajambelajar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Lebih dari 4 jam"

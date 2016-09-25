@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
@@ -58,7 +57,7 @@
         </android.support.design.widget.CollapsingToolbarLayout>
 
     </android.support.design.widget.AppBarLayout>
-    
+
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
@@ -72,7 +71,7 @@
         app:tabMode="fixed"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
-    
+
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_pp_tabs"
         android:layout_width="match_parent"
@@ -82,14 +81,14 @@
         />
     <!--<include layout="@layout/nestedscrollview_program_profile"/>-->
 
-        <LinearLayout
-
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:weightSum="1"
-            android:elevation="7dp">
+    <LinearLayout
+        android:id="@+id/bottom_button"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:weightSum="1"
+        android:elevation="7dp">
 
         <LinearLayout
             android:id="@+id/pp_ll_bookbutton"
@@ -119,5 +118,24 @@
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/progressBar_program_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_100"
+        android:gravity="center">
+        <!--<ProgressBar-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_centerHorizontal="true" />-->
+        <com.bhargavms.dotloader.DotLoader
+            android:id="@+id/text_dot_loader"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color_array="@array/dot_colors"
+            app:dot_radius="4dp"
+            app:number_of_dots="3"/>
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

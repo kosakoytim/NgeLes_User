@@ -40,9 +40,22 @@ public class RecyclerAdapterSearch extends RecyclerView.Adapter<RecyclerAdapterS
         return new SearchClient_holder(v);
     }
 
+//    public void removeAt(int position) {
+//        search_models.remove(position);
+//        notifyItemRemoved(position);
+//        notifyItemRangeChanged(position, search_models.size());
+//    }
+
     @Override
     public void onBindViewHolder(SearchClient_holder holder, int position) {
         final Search_model s =search_models.get(position);
+//        if((s.getAge_max()).equals("23"))
+//        {
+//            search_models.remove(position);
+//            notifyItemRemoved(position);
+//            notifyItemRangeChanged(position, search_models.size());
+//        }
+
         holder.titleTxt.setText(s.getTitle());
         holder.class_daysTxt.setText(s.getClass_days());
         holder.class_shiftTxt.setText(s.getClass_shift());
@@ -54,6 +67,17 @@ public class RecyclerAdapterSearch extends RecyclerView.Adapter<RecyclerAdapterS
         Picasso.with(c).load(uri).fit().centerInside().into(holder.id_imageTxt);
         //placeholder(R.drawable.styleonline). (PICASSO)
 
+
+//        holder.mParent.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //Select or deselect
+////                mListener.notify(holder, position);
+//                search_models.remove(position);
+//                notifyItemRemoved(position);
+//                notifyItemRangeChanged(position, search_models.size());
+//            }
+//        });
 
         holder.setSearch_itemclicklistener(new Search_itemclicklistener() {
             @Override
@@ -163,12 +187,16 @@ public class RecyclerAdapterSearch extends RecyclerView.Adapter<RecyclerAdapterS
         c.startActivity(i);
     }
 
+
+
+
     /**
      * Created by Timothy on 8/21/2016.
      */
-    public static class SearchClient_holder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class SearchClient_holder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-
+        private View mParent;
+        ArrayList<Search_model> search_models;
         TextView titleTxt;
         TextView class_daysTxt;
         TextView class_shiftTxt;
@@ -183,6 +211,7 @@ public class RecyclerAdapterSearch extends RecyclerView.Adapter<RecyclerAdapterS
 
         public SearchClient_holder(View itemView) {
             super(itemView);
+            mParent = itemView;
 
             titleTxt = (TextView)itemView.findViewById(R.id.search_title);
             class_daysTxt = (TextView)itemView.findViewById(R.id.search_class_days);
@@ -192,7 +221,15 @@ public class RecyclerAdapterSearch extends RecyclerView.Adapter<RecyclerAdapterS
             charge_per_blankTxt = (TextView)itemView.findViewById(R.id.search_charge_per_blank);
             id_imageTxt = (ImageView)itemView.findViewById(R.id.search_image);
             id_colorTxt = (LinearLayout)itemView.findViewById(R.id.search_color);
+
             itemView.setOnClickListener(this);
+
+//            if(testTxt.equals("23"))
+//            {
+//                int position=-1;
+//                removeAt(position);
+//            }
+
         }
 
         public void setSearch_itemclicklistener(Search_itemclicklistener search_itemclicklistener)
@@ -204,5 +241,15 @@ public class RecyclerAdapterSearch extends RecyclerView.Adapter<RecyclerAdapterS
         public void onClick(View view) {
             this.search_itemclicklistener.onItemClick(this.getLayoutPosition());
         }
+
+//        public void removeAt(int position) {
+//            final Search_model s =search_models.get(position);
+//            if((s.getAge_max()).equals("23"))
+//            {
+//                search_models.remove(position);
+//                notifyItemRemoved(position);
+//                notifyItemRangeChanged(position, search_models.size());
+//            }
+//        }
     }
 }

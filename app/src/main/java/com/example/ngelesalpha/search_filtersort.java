@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +18,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.ngelesalpha.adapter.ExpendableListAdapter;
+import com.example.ngelesalpha.firebase.SearchClient_firebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Query;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,11 +46,10 @@ public class search_filtersort extends ActionBarActivity {
     //Setup Passing Data SortFilter
     String sort_urutkanberdasarkan; // store the text corresponding to  the RadioButton which is clicked
     String filter_kelastingkat;
-    String filter_lamajambelajar;
-    String filter_lamaperiodebelajar;
-    String filter_hargaperbulan;
-    String filter_daerahtempatbelajar;
-
+    String filter_lamajambelajar="semua";
+    String filter_lamaperiodebelajar="semua";
+    String filter_hargaperbulan="semua";
+    String filter_daerahtempatbelajar="semua";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -133,8 +136,6 @@ public class search_filtersort extends ActionBarActivity {
                 return false;
             }
         });
-
-        addListenerOnButton();
     }
 
     private void prepareListData() {
@@ -152,74 +153,16 @@ public class search_filtersort extends ActionBarActivity {
         // Adding child data
         List<String> urutkanBerdasarkan = new ArrayList<String>();
         urutkanBerdasarkan.add("Test");
-//        urutkanBerdasarkan.add((RadioButton)findViewById(R.id.rb_rekomendasi));
-//        urutkanBerdasarkan.add((RadioButton)findViewById(R.id.rb_termurah));
-//        urutkanBerdasarkan.add((RadioButton)findViewById(R.id.rb_terdekat));
-//        urutkanBerdasarkan.add((RadioButton)findViewById(R.id.rb_terpopuler));
-//        urutkanBerdasarkan.add((RadioButton)findViewById(R.id.rb_termahal));
-
         List<String> kelasTingkat = new ArrayList<String>();
         kelasTingkat.add("Semua...");
-//        kelasTingkat.add("TK/PAUD");
-//        kelasTingkat.add("SD Kelas I");
-//        kelasTingkat.add("SD Kelas II");
-//        kelasTingkat.add("SD Kelas III");
-//        kelasTingkat.add("SD Kelas IV");
-//        kelasTingkat.add("SD Kelas V");
-//        kelasTingkat.add("SD Kelas VI");
-//        kelasTingkat.add("SMP Kelas VII");
-//        kelasTingkat.add("SMP Kelas VIII");
-//        kelasTingkat.add("SMP Kelas IX");
-//        kelasTingkat.add("SMA Kelas X");
-//        kelasTingkat.add("SMA Kelas XI");
-//        kelasTingkat.add("SMA Kelas XII");
-//        kelasTingkat.add("Mahasiswa");
-//        kelasTingkat.add("Bekerja (20++)");
-//        kelasTingkat.add("Umum (Terbuka)");
-
         List<String> lamajamBelajar = new ArrayList<String>();
         lamajamBelajar.add("Semua...");
-//        lamajamBelajar.add("Kurang dari 30 menit");
-//        lamajamBelajar.add("1 Jam");
-//        lamajamBelajar.add("2 Jam");
-//        lamajamBelajar.add("3 Jam");
-//        lamajamBelajar.add("4 Jam");
-//        lamajamBelajar.add("Lebih dari 4 Jam");
-
         List<String> lamaperiodeBelajar = new ArrayList<String>();
         lamaperiodeBelajar.add("Semua...");
-//        lamaperiodeBelajar.add("1x pertemuan");
-//        lamaperiodeBelajar.add("1-4 Minggu");
-//        lamaperiodeBelajar.add("1-2 Bulan");
-//        lamaperiodeBelajar.add("2-3 Bulan");
-//        lamaperiodeBelajar.add("3-4 Bulan");
-//        lamaperiodeBelajar.add("4-5 Bulan");
-//        lamaperiodeBelajar.add("5-6 Bulan");
-//        lamaperiodeBelajar.add("6-7 Bulan");
-//        lamaperiodeBelajar.add("7-12 Bulan");
-//        lamaperiodeBelajar.add("1-2 Tahun");
-//        lamaperiodeBelajar.add("2-3 Tahun");
-//        lamaperiodeBelajar.add("Lebih dari 3 Tahun");
-
         List<String> hargaperBulan = new ArrayList<String>();
         hargaperBulan.add("Semua...");
-//        hargaperBulan.add("Kurang dari IDR 100,000");
-//        hargaperBulan.add("IDR 100,000-500,000");
-//        hargaperBulan.add("IDR 500,000-1,000,000");
-//        hargaperBulan.add("IDR 1,000,000-2,000,000");
-//        hargaperBulan.add("IDR 2,000,000-3,000,000");
-//        hargaperBulan.add("IDR 3,000,000-5,000,000");
-//        hargaperBulan.add("Lebih dari IDR 5,000,000");
-
         List<String> daerahtempatBelajar = new ArrayList<String>();
         daerahtempatBelajar.add("Semua...");
-//        daerahtempatBelajar.add("Jakarta Barat");
-//        daerahtempatBelajar.add("Jakarta Timur");
-//        daerahtempatBelajar.add("Jakarta Utara");
-//        daerahtempatBelajar.add("Jakarta Selatan");
-//        daerahtempatBelajar.add("Jakarta Pusat");
-//        daerahtempatBelajar.add("Tangerang");
-//        daerahtempatBelajar.add("Bekasi");
 
         listDataChild.put(listDataHeader.get(0), urutkanBerdasarkan); // Header, Child data
         listDataChild.put(listDataHeader.get(1), kelasTingkat);
@@ -230,181 +173,299 @@ public class search_filtersort extends ActionBarActivity {
     }
 
     public void onRadioButtonClicked_sort_urutkanberdasarkan(View view) {
-        // Is the button now checked?
+        sort_urutkanberdasarkan="null";
         boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.rb_rekomendasi_kami:
                 if (checked)
-                    sort_urutkanberdasarkan = "button1Text";
+                    sort_urutkanberdasarkan = "1";
                 break;
             case R.id.rb_termurah:
                 if (checked)
-                    sort_urutkanberdasarkan = "button2Text";
+                    sort_urutkanberdasarkan = "2";
                 break;
             case R.id.rb_terdekat:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    sort_urutkanberdasarkan = "3";
                 break;
             case R.id.rb_termahal:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    sort_urutkanberdasarkan = "1";
                 break;
             case R.id.rb_terpopuler:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    sort_urutkanberdasarkan = "1";
                 break;
         }
     }
 
-    public void onRadioButtonClicked_sort_urutkanberdasarkan(View view) {
-        // Is the button now checked?
+    public void onRadioButtonClicked_filter_kelastingkat(View view) {
+        filter_kelastingkat="null";
         boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.rb_rekomendasi_kami:
+            case R.id.rb_kelastingkat_semua:
                 if (checked)
-                    sort_urutkanberdasarkan = "button1Text";
+                    filter_kelastingkat = "button1Text";
                 break;
-            case R.id.rb_termurah:
+            case R.id.rb_tk_paud:
                 if (checked)
-                    sort_urutkanberdasarkan = "button2Text";
+                    filter_kelastingkat = "button2Text";
                 break;
-            case R.id.rb_terdekat:
+            case R.id.rb_sd_kelas_i:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_kelastingkat = "button3Text";
                 break;
-            case R.id.rb_termahal:
+            case R.id.rb_sd_kelas_ii:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_kelastingkat = "button3Text";
                 break;
-            case R.id.rb_terpopuler:
+            case R.id.rb_sd_kelas_iii:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_sd_kelas_iv:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_sd_kelas_v:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_sd_kelas_vi:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_smp_kelas_vii:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_smp_kelas_viii:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_smp_kelas_ix:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_sma_kelas_x:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_sma_kelas_xi:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_sma_kelas_xii:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_mahasiswa:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_bekerja1725:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_bekerja2630:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_bekerja3140:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_bekerja4150:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
+                break;
+            case R.id.rb_bekerja51:
+                if (checked)
+                    filter_kelastingkat = "button3Text";
                 break;
         }
     }
 
-    public void onRadioButtonClicked_sort_urutkanberdasarkan(View view) {
-        // Is the button now checked?
+    public void onRadioButtonClicked_filter_lamajambelajar(View view) {
+        filter_lamajambelajar="semua";
         boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.rb_rekomendasi_kami:
+            case R.id.rb_lamajambelajar_semua:
                 if (checked)
-                    sort_urutkanberdasarkan = "button1Text";
+                    filter_lamajambelajar = "semua";
                 break;
-            case R.id.rb_termurah:
+            case R.id.rb_kurangdari30menit:
                 if (checked)
-                    sort_urutkanberdasarkan = "button2Text";
+                    filter_lamajambelajar = "kurang_dari_30_menit";
                 break;
-            case R.id.rb_terdekat:
+            case R.id.rb_1jam:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_lamajambelajar = "1_jam";
                 break;
-            case R.id.rb_termahal:
+            case R.id.rb_2jam:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_lamajambelajar = "2_jam";
                 break;
-            case R.id.rb_terpopuler:
+            case R.id.rb_3jam:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_lamajambelajar = "3_jam";
+                break;
+            case R.id.rb_4jam:
+                if (checked)
+                    filter_lamajambelajar = "4_jam";
+                break;
+            case R.id.rb_lebihdari4jam:
+                if (checked)
+                    filter_lamajambelajar = "lebih_dari_4_jam";
                 break;
         }
     }
 
-    public void onRadioButtonClicked_sort_urutkanberdasarkan(View view) {
-        // Is the button now checked?
+    public void onRadioButtonClicked_filter_lamaperiodebelajar(View view) {
+        filter_lamaperiodebelajar="semua";
         boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.rb_rekomendasi_kami:
+            case R.id.rb_lamaperiodebelajar_semua:
                 if (checked)
-                    sort_urutkanberdasarkan = "button1Text";
+                    filter_lamaperiodebelajar = "semua";
                 break;
-            case R.id.rb_termurah:
+            case R.id.rb_1xpertemuan:
                 if (checked)
-                    sort_urutkanberdasarkan = "button2Text";
+                    filter_lamaperiodebelajar = "1x_pertemuan";
                 break;
-            case R.id.rb_terdekat:
+            case R.id.rb_1_4minggu:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_lamaperiodebelajar = "1-4_minggu";
                 break;
-            case R.id.rb_termahal:
+            case R.id.rb_1_2bulan:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_lamaperiodebelajar = "1-2_bulan";
                 break;
-            case R.id.rb_terpopuler:
+            case R.id.rb_2_4bulan:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_lamaperiodebelajar = "2-4_bulan";
+                break;
+            case R.id.rb_4_6bulan:
+                if (checked)
+                    filter_lamaperiodebelajar = "4-6_bulan";
+                break;
+            case R.id.rb_6_12bulan:
+                if (checked)
+                    filter_lamaperiodebelajar = "6-12_bulan";
+                break;
+            case R.id.rb_1_2tahun:
+                if (checked)
+                    filter_lamaperiodebelajar = "1-2_tahun";
+                break;
+            case R.id.rb_2_3tahun:
+                if (checked)
+                    filter_lamaperiodebelajar = "2-3_tahun";
+                break;
+            case R.id.rb_lebihdari3tahun:
+                if (checked)
+                    filter_lamaperiodebelajar = "lebih_dari_3_tahun";
                 break;
         }
     }
 
-    public void onRadioButtonClicked_sort_urutkanberdasarkan(View view) {
-        // Is the button now checked?
+    public void onRadioButtonClicked_filter_hargaperbulan(View view) {
+        filter_hargaperbulan="semua";
         boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.rb_rekomendasi_kami:
+            case R.id.rb_hargaperbulan_semua:
                 if (checked)
-                    sort_urutkanberdasarkan = "button1Text";
+                    filter_hargaperbulan = "semua";
                 break;
-            case R.id.rb_termurah:
+            case R.id.rb_kurangdariidr100rb:
                 if (checked)
-                    sort_urutkanberdasarkan = "button2Text";
+                    filter_hargaperbulan = "kurang_dari_idr_100000";
                 break;
-            case R.id.rb_terdekat:
+            case R.id.rb_idr100rb:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_hargaperbulan = "idr_100000_500000";
                 break;
-            case R.id.rb_termahal:
+            case R.id.rb_idr500rb1jt:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_hargaperbulan = "idr_500000_1000000";
                 break;
-            case R.id.rb_terpopuler:
+            case R.id.rb_idr1jt2jt:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_hargaperbulan = "idr_1000000_2000000";
+                break;
+            case R.id.rb_2jt3jt:
+                if (checked)
+                    filter_hargaperbulan = "idr_2000000_3000000";
+                break;
+            case R.id.rb_3jt5jt:
+                if (checked)
+                    filter_hargaperbulan = "idr_3000000_5000000";
+                break;
+            case R.id.rb_lebihdari5jt:
+                if (checked)
+                    filter_hargaperbulan = "lebih_dari_idr_5000000";
                 break;
         }
     }
 
-    public void onRadioButtonClicked_sort_urutkanberdasarkan(View view) {
-        // Is the button now checked?
+    public void onRadioButtonClicked_filter_daerahtempatbelajar(View view) {
         boolean checked = ((RadioButton) view).isChecked();
-        // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.rb_rekomendasi_kami:
+            case R.id.rb_daerahtempatbelajar_semua:
                 if (checked)
-                    sort_urutkanberdasarkan = "button1Text";
+                    filter_daerahtempatbelajar = "semua";
                 break;
-            case R.id.rb_termurah:
+            case R.id.rb_jakartabarat:
                 if (checked)
-                    sort_urutkanberdasarkan = "button2Text";
+                    filter_daerahtempatbelajar = "jakarta_barat";
                 break;
-            case R.id.rb_terdekat:
+            case R.id.rb_jakartatimur:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_daerahtempatbelajar = "jakarta_timur";
                 break;
-            case R.id.rb_termahal:
+            case R.id.rb_jakartautara:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_daerahtempatbelajar = "jakarta_utara";
                 break;
-            case R.id.rb_terpopuler:
+            case R.id.rb_jakartaselatan:
                 if (checked)
-                    sort_urutkanberdasarkan = "button3Text";
+                    filter_daerahtempatbelajar = "jakarta_selatan";
+                break;
+            case R.id.rb_jakartapusat:
+                if (checked)
+                    filter_daerahtempatbelajar = "jakarta_pusat";
+                break;
+            case R.id.rb_tangerang:
+                if (checked)
+                    filter_daerahtempatbelajar = "tangerang";
+                break;
+            case R.id.rb_bekasi:
+                if (checked)
+                    filter_daerahtempatbelajar = "bekasi";
                 break;
         }
     }
 
     public void apply_sort_filter(View view) {
+        //Initialize Firebase DB
+        Intent intent= getIntent();
+        String child=intent.getExtras().getString("CATEGORY_KEY");
+        String pass_category_to_search=child;
+
         Intent i = new Intent(this, search.class);
+        i.putExtra("CATEGORY_KEY", pass_category_to_search);
+
+        String get_intent_from = "from_sort_and_filter";
+        i.putExtra("GET_INTENT_FROM",get_intent_from);
+
         i.putExtra("SORT_URUTKANBERDASARKAN_KEY", sort_urutkanberdasarkan);
         i.putExtra("FILTER_KELASTINGKAT_KEY", filter_kelastingkat);
         i.putExtra("FILTER_LAMAJAMBELAJAR_KEY", filter_lamajambelajar);
         i.putExtra("FILTER_LAMAPERIODEBELAJAR_KEY", filter_lamaperiodebelajar);
         i.putExtra("FILTER_HARGAPERBULAN_KEY", filter_hargaperbulan);
         i.putExtra("FILTER_DAERAHTEMPATBELAJAR_KEY", filter_daerahtempatbelajar);
+
+        finish();
+        Log.d("class SEARCH_FILTER " ,""+filter_lamajambelajar+"---"+filter_lamaperiodebelajar+"---"+filter_hargaperbulan+"---"+filter_daerahtempatbelajar);
         startActivity(i);
     }
 
