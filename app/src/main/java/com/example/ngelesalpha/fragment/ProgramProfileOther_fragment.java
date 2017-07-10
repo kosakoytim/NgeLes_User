@@ -11,7 +11,7 @@ import com.example.ngelesalpha.R;
 /**
  * Created by Timothy on 7/15/2016.
  */
-public class ProgramProfileTestimonial_fragment extends Fragment {
+public class ProgramProfileOther_fragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
